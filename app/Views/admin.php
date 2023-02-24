@@ -182,7 +182,7 @@
                                             <td>Iphone 14</td>
                                             <td>087788668719</td>
                                             <td>2009/01/12</td>
-                                            <td>Rp 586.000</td>
+                                            <td>Rp 582.000</td>
                                             <td><a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
