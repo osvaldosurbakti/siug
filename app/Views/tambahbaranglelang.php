@@ -42,6 +42,10 @@
                                     <label for="nama">Harga Barang Lelang</label>
                                     <input type="text" class="form-control form-control-user" id="nama" placeholder="Harga">
                                 </div>
+                                <div class="form-group">
+                                    <label for="nama">Kelengkapan Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Harga">
+                                </div>
                                 <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="fileUpload">Gambar Barang Lelang</label>

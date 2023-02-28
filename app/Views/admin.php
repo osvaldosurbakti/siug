@@ -140,12 +140,12 @@
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                            <th>Salary</th>
+                                            <th>Nama</th>
+                                            <th>Barang Gadai</th>
+                                            <th>Nomor Telepon</th>
+                                            <th>Tanggal Gadai</th>
+                                            <th>Jumlah Pinjaman</th>
+                                            <th>Edit</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

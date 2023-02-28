@@ -126,6 +126,7 @@
                                             <th>Nama Barang Lelang</th>
                                             <th>Harga</th>
                                             <th>Gambar Barang Lelang</th>
+                                            <th>Kelengkapan Barang Lelang</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -133,6 +134,7 @@
                                             <th>Nama Barang Lelang</th>
                                             <th>Harga</th>
                                             <th>Gambar Barang Lelang</th>
+                                            <th>Kelengkapan Barang Lelang</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -140,72 +142,87 @@
                                             <td>Laptop Acer</td>
                                             <td>Rp 10.500.000</td>
                                             <td></td>
+                                            <td>Kotak, Charger, Tas Laptop, Mouse, Keyboard</td>
+
                                         </tr>
                                         <tr>
                                             <td>Laptop Asus</td>
                                             <td>Rp 5.500.000</td>
                                             <td></td>
+                                            <td>Kotak, Charger, Tas Laptop, Mouse, Keyboard</td>
                                         </tr>
                                         <tr>
                                             <td>Laptop Asus</td>
                                             <td>Rp 3.500.000</td>
                                             <td></td>
+                                            <td>Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Laptop Toshiba</td>
                                             <td>Rp 2.500.000</td>
                                             <td></td>
+                                            <td>Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Laptop Acer</td>
                                             <td>Rp 4.500.000</td>
                                             <td></td>
+                                            <td>Tas Laptop</td>
                                         </tr>
                                         <tr>
                                             <td>Laptop Acer</td>
                                             <td>Rp 5.500.000</td>
                                             <td></td>
+                                            <td>Tas Laptop</td>
                                         </tr>
                                         <tr>
                                             <td>Laptop Asus</td>
                                             <td>Rp 5.500.000</td>
                                             <td></td>
+                                            <td>Tas Laptop dan Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Laptop Toshiba</td>
                                             <td>Rp 3.500.000</td>
                                             <td></td>
+                                            <td>Tas Laptop dan Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Xiaomi Red 4</td>
                                             <td>Rp 2.500.000</td>
                                             <td></td>
+                                            <td>Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Iphone 13</td>
                                             <td>Rp 10.500.000</td>
                                             <td></td>
+                                            <td>Kotak dan Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Iphone 14</td>
                                             <td>Rp 11.500.000</td>
                                             <td></td>
+                                            <td>Kotak, Charger, dan Earphone</td>
                                         </tr>
                                         <tr>
                                             <td>Oppo Reno 4</td>
                                             <td>Rp 2.500.000</td>
                                             <td></td>
+                                            <td>Charger</td>
                                         </tr>
                                         <tr>
                                             <td>Vivo v7+</td>
                                             <td>Rp 1.500.000</td>
                                             <td></td>
+                                            <td>Charger</td>
                                         </tr>
 
                                         <tr>
                                             <td>Honda Astrea</td>
                                             <td>Rp 3.000.000</td>
                                             <td></td>
+                                            <td>STNK dan BPKB</td>
                                         </tr>
                                         </tr>
                                     </tbody>
