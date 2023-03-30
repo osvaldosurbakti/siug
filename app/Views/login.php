@@ -52,7 +52,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="tampilnomorwa">Kesulitan Login? Hubungi Kami</a>
+                                        <a class="small" href=https://wa.me/087788668719>Kesulitan Login? Hubungi Kami</a>
                                     </div>
                                 </div>
                             </div>
