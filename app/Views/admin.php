@@ -203,12 +203,14 @@
                                             <td>087788668719</td>
                                             <td>2011/04/25</td>
                                             <td>Rp 5.320.800</td>
-                                            <td><a href="simpandatapelanggan" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="#" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
+                                            <td><a href="simpandatapelanggan" class="btn btn-danger btn-circle btn-sm" data-target="#logoutModal">
+                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-info btn-circle btn-sm">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </a>
+
                                             </td>
                                         </tr>
                                         <tr>
@@ -430,6 +432,25 @@
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Anda akan logout?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Pilih Logout apabila anda akan keluar</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="home">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal-->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
