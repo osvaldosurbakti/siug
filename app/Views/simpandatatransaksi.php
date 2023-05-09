@@ -40,6 +40,10 @@
                                     <input type="text" id="rupiah" name="rupiah" placeholder="Rp 0">
                                 </div>
                                 <div class="form-group">
+                                    <label for="nama">Potong Atas</label>
+                                    <input type="checkbox" id="rupiah" name="rupiah" placeholder="Rp 0">
+                                </div>
+                                <div class="form-group">
                                     <label for="nama">Jumlah Pinjaman Yang Diterima</label>
                                     <input type="text" id="rupiah" name="rupiah" placeholder="Rp 0">
                                 </div>

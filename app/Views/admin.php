@@ -98,7 +98,7 @@
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
-                                    Alerts Center
+                                    Notifikasi Pelanggan
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center">
                                     <div class="mr-3">
@@ -203,14 +203,21 @@
                                             <td>087788668719</td>
                                             <td>2011/04/25</td>
                                             <td>Rp 5.320.800</td>
-                                            <td><a href="simpandatapelanggan" class="btn btn-danger btn-circle btn-sm" data-target="#logoutModal">
-                                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-                                                    <a href="#" class="btn btn-info btn-circle btn-sm">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </a>
-
+                                            <td>
+                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -219,11 +226,19 @@
                                             <td>087788668719</td>
                                             <td>2011/07/25</td>
                                             <td>Rp 4.170.750</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td> <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -233,11 +248,19 @@
                                             <td>087788668719</td>
                                             <td>2009/01/12</td>
                                             <td>Rp 582.000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -247,11 +270,19 @@
                                             <td>087712668719</td>
                                             <td>2012/03/29</td>
                                             <td>Rp 24.433.060</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -261,11 +292,20 @@
                                             <td>082388668719</td>
                                             <td>2008/11/28</td>
                                             <td>Rp 5.162.700</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
+                                            <td>
                                                 <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
                                                     <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -275,11 +315,19 @@
                                             <td>0257788668719</td>
                                             <td>2012/12/02</td>
                                             <td>Rp 5.372.000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -289,11 +337,19 @@
                                             <td>087528668719</td>
                                             <td>2012/08/06</td>
                                             <td>Rp 1.327.500</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -303,11 +359,19 @@
                                             <td>087781268719</td>
                                             <td>2010/10/14</td>
                                             <td>Rp 3.270.900</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -317,11 +381,19 @@
                                             <td>087756668719</td>
                                             <td>2009/09/15</td>
                                             <td>Rp 205,500</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -331,11 +403,19 @@
                                             <td>087288668719</td>
                                             <td>2008/12/13</td>
                                             <td>Rp 1.030,000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -345,11 +425,19 @@
                                             <td>082388668719</td>
                                             <td>2008/12/19</td>
                                             <td>Rp 2.500.000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -359,11 +447,19 @@
                                             <td>087721668719</td>
                                             <td>2013/03/03</td>
                                             <td>Rp 3.420.000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -373,11 +469,19 @@
                                             <td>087788612719</td>
                                             <td>2008/10/16</td>
                                             <td>Rp 4.760.000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -388,11 +492,19 @@
                                             <td>087788668720</td>
                                             <td>2012/09/26</td>
                                             <td>Rp 2.175.000</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                            <td><a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="simpandatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="simpandatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
+                                                <a href="#" class="btn btn-secondary ">
+                                                    <span class="icon text-white-100">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
                                                 </a>
                                             </td>
                                         </tr>
