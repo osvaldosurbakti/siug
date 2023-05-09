@@ -110,7 +110,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <a href="home" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Logout</a>
+                                <a href="home" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="font-size: 1.0rem; padding: 1.0rem 1.0rem;">><i class="fas fa-sm text-white-100"></i> Logout</a>
                             </div>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

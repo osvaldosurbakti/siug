@@ -171,7 +171,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-5">
                         <div class="card-header py-4">
-                            <h6 class="m-0 font-weight-bold text-primary">List Barang Lelang</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Tabel Barang Lelang</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
