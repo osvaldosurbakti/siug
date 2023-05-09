@@ -84,6 +84,14 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="d-none d-sm-inline-block ml-md-3 my-2 my-md-0">
+                            <span class="text-gray-800 font-weight-bold" style="font-size: 2.0rem;">Profil Perusahaan</span>
+                        </div>
+
+
+                    </form>
 
 
                     <!-- Topbar Navbar -->
@@ -105,24 +113,32 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Content Row -->
-            <div class="row">
-
-                <!-- Content Column -->
-                <div class="col-lg-6 mb-4">
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">UD. Ricky Gadai Medan merupakan salah satu perusahaan swasta di Kota Medan yang melayani pegadaian dan pelelangan barang gadai berupa kendaraan pribadi dan barang-barang elektronik. Pada laporan data transaksi, tercatat perusahaan ini beroperasi sejak 2018 dan telah melayani ribuan transaksi dengan nasabah. Perusahaan ini memberikan solusi keuangan bagi individu atau usaha kecil yang membutuhkan dana cepat. </h1>
+                    <img src="GambarGedung.png" alt="Logo">
+                    <h1></h1>
+                    <img src="Logor.jpg" alt="Logo">
 
                 </div>
-            </div>
+                <!-- /.container-fluid -->
 
+                <!-- Content Row -->
+
+                <div class="row">
+                </div>
+            </div>
         </div>
+
+        <!-- Content Row -->
+        <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <!-- /.container-fluid -->
