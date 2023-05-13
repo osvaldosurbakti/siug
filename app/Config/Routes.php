@@ -33,10 +33,19 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/login', 'Home::login');
+$routes->get('/homelelang', 'Home::homeLelang');
 $routes->get('/admin', 'Admin::index');
 $routes->get('/adminlelang', 'Adminlelang::index');
 $routes->get('/login', 'Login::index');
-$routes->get('/homelelang', 'HomeLelang::index');
+$routes->get('/tambahbaranglelang', 'Adminlelang::tambahbaranglelang');
+$routes->get('/datatransaksi', 'Pelanggan::datatransaksi');
+$routes->get('/pelangganlelang', 'Pelanggan::pelangganlelang');
+$routes->get('/perjanjiangadai', 'Pelanggan::perjanjiangadai');
+$routes->get('/simpandatapelanggan', 'Admin::simpandatapelanggan');
+$routes->get('/simpandatatransaksi', 'Admin::simpandatatransaksi');
+$routes->get('/updatedatapelanggan', 'Admin::updatedatapelanggan');
+$routes->get('/updatedatatransaksi', 'Admin::updatedatatransaksi');
 
 
 

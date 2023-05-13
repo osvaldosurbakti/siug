@@ -16,8 +16,16 @@ class Admin extends BaseController
         return view('simpandatapelanggan');
     }
 
-    public function adminlelang()
+    public function simpandatatransaksi()
     {
-        return view('adminlelang');
+        return view('simpandatatransaksi');
+    }
+    public function updatedatapelanggan()
+    {
+        return view('updatedatapelanggan');
+    }
+    public function updatedatatransaksi()
+    {
+        return view('updatedatatransaksi');
     }
 }
