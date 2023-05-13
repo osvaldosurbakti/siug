@@ -111,19 +111,19 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <a href="home" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="font-size: 1.0rem; padding: 1.0rem 1.0rem;">><i class="fas fa-sm text-white-100"></i> Logout</a>
-                            </div>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <button class="dropdown-item" type="button" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </button>
+                            <div class="dropdown">
+                                <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-sm text-white-100"></i> Logout
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
                             </div>
                         </li>
-
-                    </ul>
 
                 </nav>
                 <!-- End of Topbar -->
@@ -132,10 +132,50 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Data Pelanggan</h1>
+                    <h1 class="h3 mb-2 text-gray-800 text-center">Data Pelanggan</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 my-auto">
+                            <div class="p-5">
+                                <form class="user">
+                                    <div class="form-group">
+                                        <label for="nama">Nama</label>
+                                        <input type="text" class="form-control form-control-user" id="nama" placeholder="Nama">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Nomor Induk Kependudukan</label>
+                                        <input type="number" class="form-control form-control-user" id="angka" placeholder="Nomor Induk Kependudukan">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Alamat</label>
+                                        <input type="text" class="form-control form-control-user" id="nama" placeholder="Alamat">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Nomor Handphone</label>
+                                        <input type="number" class="form-control form-control-user" id="angka" placeholder="Nomor Handphone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Tanggal Perjanjian Gadai</label>
+                                        <input type="date" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Nama Barang Gadai</label>
+                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Nama Barang Gadai">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Kelengkapan Barang Gadai</label>
+                                        <input type="name" class="form-control form-control-user" id="exampleInputEmail" placeholder="Kelengkapan Barang Gadai">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nama">Foto KTP</label>
+                                        <td><img src="LogoR.jpg" alt="" width="300"></td>
+                                    </div>
 
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- End of Main Content -->
+
 
                 <!-- Footer -->
                 <footer class="sticky-footer bg-white">
@@ -171,7 +211,7 @@
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
+                        <a class="btn btn-primary" href="home">Logout</a>
                     </div>
                 </div>
             </div>

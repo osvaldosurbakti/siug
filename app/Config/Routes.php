@@ -40,6 +40,7 @@ $routes->get('/adminlelang', 'Adminlelang::index');
 $routes->get('/login', 'Login::index');
 $routes->get('/tambahbaranglelang', 'Adminlelang::tambahbaranglelang');
 $routes->get('/datatransaksi', 'Pelanggan::datatransaksi');
+$routes->get('/pelanggan', 'Pelanggan::index');
 $routes->get('/pelangganlelang', 'Pelanggan::pelangganlelang');
 $routes->get('/perjanjiangadai', 'Pelanggan::perjanjiangadai');
 $routes->get('/simpandatapelanggan', 'Admin::simpandatapelanggan');

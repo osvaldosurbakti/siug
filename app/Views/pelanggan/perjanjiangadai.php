@@ -110,15 +110,17 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <a href="home" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="font-size: 1.0rem; padding: 1.0rem 1.0rem;">><i class="fas fa-sm text-white-100"></i> Logout</a>
-                            </div>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <button class="dropdown-item" type="button" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </button>
+                            <div class="dropdown">
+                                <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-sm text-white-100"></i> Logout
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
                             </div>
                         </li>
 
@@ -131,8 +133,23 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Perjanjian Gadai</h1>
-
+                    <h1 class="h3 mb-2 text-gray-800"><b>Perjanjian Gadai</b></h1>
+                    <h4>Pasal 1 : <br>
+                        1. Pelanggan selaku PIHAK KEDUA menyerahkan barang kepada UD. Ricky Gadai Medan selaku PIHAK PERTAMA <br>
+                        2. PIHAK PERTAMA menyatakan telah menerima barang dari PIHAK KEDUA sebagaimana disebut pada ayat (1). <br>
+                        Pasal 2 <br>
+                        1. PIHAK KEDUA menyatakan bahwa barang yang dititipkan merupakan milik pribadi dan bukan barang curian atau yang terlibat dengan kasus hukum.<br>
+                        2. PIHAK PERTAMA tidak bertanggung jawab terhadap segala jenis kerusakan pada barang dititipkan selama proses penitipan.<br>
+                        Pasal 3<br>
+                        1. PIHAK KEDUA menyerahkan barang kepada PIHAK PERTAMA untuk dijadikan jaminan,<br>
+                        Pasal 4<br>
+                        1. PIHAK PERTAMA telah memberikan dana kepada PIHAK KEDUA yang merupakan nilai taksir dari barang tersebut, dan atas seluruh dana tersebut PIHAK KEDUA dikenakan uang jasa yang telah disepakati bersama atau syarat dan ketetuan yang telah ditetapkan PIHAK PERTAMA.<br>
+                        Perjanjian ini berlaku selama satu bulan sejak penandatanganan perjanjian.<br>
+                        Pasal 5<br>
+                        1. PIHAK KEDUA akan dikenakan denda per harinya oleh PIHAK PERTAMA, apabila waktu pembayaran sudah melewati tanggal yang telah ditentukan.<br>
+                        2. PIHAK KEDUA hanya diberikan toleransi selambat-lambatnya 10 hari dari tanggal yang ditentukan untuk melunasi utang pokok maupun membayar jasa. Dalam waktu 10 hari toleransi, akan dikenakan denda sebesar Rp 10.000 rupiah/hari.<br>
+                        3. Apabila ternyata apabila PIHAK KEDUA dengan sengaja lalai melakukan pembayaran atas utang pokok maupun uang jasa sesuai perjanjian yang telah ditentukan, maka PIHAK PERTAMA akan mengadakan lelang barang yang dititipkan PIHAK KEDUA tanpa ada tuntutan apapun kepada PIHAK PERTAMA.
+                    </h4>
                 </div>
                 <!-- End of Main Content -->
 

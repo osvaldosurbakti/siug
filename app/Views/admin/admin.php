@@ -111,28 +111,6 @@
                                         Airi Satou Akan Melakakukan Penebusan Barang Gadai Sebesar Rp. 5.162.700
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        Asthon Cox Akan Melakakukan Penebusan Barang Gadai Sebesar Rp. 582.000
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Asthon Cox Akan Melakakukan Penebusan Barang Gadai Sebesar Rp. 582.000
-                                    </div>
-                                </a>
                             </div>
                         </li>
 

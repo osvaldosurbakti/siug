@@ -109,15 +109,17 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                                <a href="home" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="font-size: 1.0rem; padding: 1.0rem 1.0rem;">><i class="fas fa-sm text-white-100"></i> Logout</a>
-                            </div>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <button class="dropdown-item" type="button" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </button>
+                            <div class="dropdown">
+                                <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-sm text-white-100"></i> Logout
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-fw mr-2 text-gray-400"></i>
+                                        Logout
+                                    </a>
+                                </div>
                             </div>
                         </li>
 
@@ -163,86 +165,6 @@
                                             <td></td>
                                             <td>Kotak, Charger, Tas Laptop, Mouse, Keyboard</td>
 
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Asus</td>
-                                            <td>Rp 5.500.000</td>
-                                            <td></td>
-                                            <td>Kotak, Charger, Tas Laptop, Mouse, Keyboard</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Asus</td>
-                                            <td>Rp 3.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Toshiba</td>
-                                            <td>Rp 2.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Acer</td>
-                                            <td>Rp 4.500.000</td>
-                                            <td></td>
-                                            <td>Tas Laptop</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Acer</td>
-                                            <td>Rp 5.500.000</td>
-                                            <td></td>
-                                            <td>Tas Laptop</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Asus</td>
-                                            <td>Rp 5.500.000</td>
-                                            <td></td>
-                                            <td>Tas Laptop dan Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Toshiba</td>
-                                            <td>Rp 3.500.000</td>
-                                            <td></td>
-                                            <td>Tas Laptop dan Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Xiaomi Red 4</td>
-                                            <td>Rp 2.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Iphone 13</td>
-                                            <td>Rp 10.500.000</td>
-                                            <td></td>
-                                            <td>Kotak dan Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Iphone 14</td>
-                                            <td>Rp 11.500.000</td>
-                                            <td></td>
-                                            <td>Kotak, Charger, dan Earphone</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Oppo Reno 4</td>
-                                            <td>Rp 2.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vivo v7+</td>
-                                            <td>Rp 1.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Honda Astrea</td>
-                                            <td>Rp 3.000.000</td>
-                                            <td></td>
-                                            <td>STNK dan BPKB</td>
-                                        </tr>
                                         </tr>
                                     </tbody>
                                 </table>

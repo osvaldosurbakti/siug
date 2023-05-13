@@ -6,21 +6,21 @@ class Pelanggan extends BaseController
 {
     public function index()
     {
-        return view('pelanggan');
+        return view('pelanggan/pelanggan');
     }
 
     public function datatransaksi()
     {
-        return view('datatransaksi');
+        return view('pelanggan/datatransaksi');
     }
 
     public function pelangganlelang()
     {
-        return view('pelangganlelang');
+        return view('pelanggan/pelangganlelang');
     }
 
     public function perjanjiangadai()
     {
-        return view('perjanjiangadai');
+        return view('pelanggan/perjanjiangadai');
     }
 }
