@@ -46,6 +46,7 @@ $routes->get('/simpandatapelanggan', 'Admin::simpandatapelanggan');
 $routes->get('/simpandatatransaksi', 'Admin::simpandatatransaksi');
 $routes->get('/updatedatapelanggan', 'Admin::updatedatapelanggan');
 $routes->get('/updatedatatransaksi', 'Admin::updatedatatransaksi');
+$routes->get('/updatebaranglelang', 'Adminlelang::updatebaranglelang');
 
 
 

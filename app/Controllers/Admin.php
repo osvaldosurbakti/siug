@@ -8,24 +8,24 @@ class Admin extends BaseController
 {
     public function index()
     {
-        return view('admin');
+        return view('admin/admin');
     }
 
     public function simpandatapelanggan()
     {
-        return view('simpandatapelanggan');
+        return view('admin/simpandatapelanggan');
     }
 
     public function simpandatatransaksi()
     {
-        return view('simpandatatransaksi');
+        return view('admin/simpandatatransaksi');
     }
     public function updatedatapelanggan()
     {
-        return view('updatedatapelanggan');
+        return view('admin/updatedatapelanggan');
     }
     public function updatedatatransaksi()
     {
-        return view('updatedatatransaksi');
+        return view('admin/updatedatatransaksi');
     }
 }

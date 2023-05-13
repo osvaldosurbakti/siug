@@ -10,12 +10,17 @@ class Adminlelang extends BaseController
     public function index()
     {
 
-        return view('adminlelang');
+        return view('adminlelang/adminlelang');
     }
 
     public function tambahbaranglelang()
     {
 
-        return view('tambahbaranglelang');
+        return view('adminlelang/tambahbaranglelang');
+    }
+    public function updatebaranglelang()
+    {
+
+        return view('adminlelang/updatebaranglelang');
     }
 }
