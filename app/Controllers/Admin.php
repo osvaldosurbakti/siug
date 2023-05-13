@@ -20,10 +20,12 @@ class Admin extends BaseController
     {
         return view('admin/simpandatatransaksi');
     }
+
     public function updatedatapelanggan()
     {
         return view('admin/updatedatapelanggan');
     }
+
     public function updatedatatransaksi()
     {
         return view('admin/updatedatatransaksi');

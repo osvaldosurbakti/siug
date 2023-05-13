@@ -6,16 +6,16 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('home');
+        return view('home/home');
     }
 
     public function homeLelang()
     {
-        return view('homelelang');
+        return view('home/homelelang');
     }
 
     public function login()
     {
-        return view('login');
+        return view('home/login');
     }
 }
