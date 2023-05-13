@@ -195,176 +195,21 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>Laptop Acer</td>
-                                            <td>Rp 10.500.000</td>
-                                            <td></td>
-                                            <td>Kotak, Charger, Tas Laptop, Mouse, Keyboard</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Asus</td>
-                                            <td>Rp 5.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Asus</td>
-                                            <td>Rp 3.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Toshiba</td>
-                                            <td>Rp 2.500.000</td>
-                                            <td></td>
-                                            <td>-</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Acer</td>
-                                            <td>Rp 4.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Acer</td>
-                                            <td>Rp 5.500.000</td>
-                                            <td></td>
-                                            <td>Tas Laptop</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Asus</td>
-                                            <td>Rp 5.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laptop Toshiba</td>
-                                            <td>Rp 3.500.000</td>
-                                            <td></td>
-                                            <td>Tas Laptop dan Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Xiaomi Red 4</td>
-                                            <td>Rp 2.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Iphone 13</td>
-                                            <td>Rp 10.500.000</td>
-                                            <td></td>
-                                            <td>Kotak, Charger, Earphone</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Iphone 14</td>
-                                            <td>Rp 11.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Oppo Reno 4</td>
-                                            <td>Rp 2.500.000</td>
-                                            <td></td>
-                                            <td>Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vivo v7+</td>
-                                            <td>Rp 1.500.000</td>
-                                            <td></td>
-                                            <td>Kotak dan Charger</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-
+                                        <?php foreach ($barang_lelang as $bl) : ?>
+                                            <tr>
+                                                <td><?= $bl['nama_barang']; ?></td>
+                                                <td><?= $bl['harga_barang']; ?></td>
+                                                <td><?= $bl['gambar_barang']; ?></td>
+                                                <td><?= $bl['kelengkapan_barang']; ?></td>
+                                                <td><a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                    <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach ?>
                                         <tr>
                                             <td>Honda Astrea</td>
                                             <td>Rp 3.000.000</td>
