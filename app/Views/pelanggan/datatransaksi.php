@@ -108,6 +108,16 @@
                     <ul class="navbar-nav ml-auto">
 
                         <ul class="navbar-nav ml-auto">
+
+                            <!-- Nav Item - Tebus Barang Gadai -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <!-- Dropdown - Tebus Barang Gadai -->
+                                <a class="nav-link" href="tebusbarang" id="tebusDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-hand-holding-usd fa-fw"></i>
+                                    Tebus Barang Gadai
+                                </a>
+                            </li>
+
                             <!-- Nav Item - Alerts -->
                             <li class="nav-item dropdown no-arrow mx-1">
                                 <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
