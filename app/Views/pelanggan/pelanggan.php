@@ -107,23 +107,51 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown">
-                                <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-sm text-white-100"></i> Logout
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell fa-fw"></i>
+                                    <!-- Counter - Alerts -->
+                                    <span class="badge badge-danger badge-counter">1</span>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                        <i class="fas fa-sign-out-alt fa-fw mr-2 text-gray-400"></i>
-                                        Logout
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Notifikasi Pelanggan
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="fas fa-file-alt text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 12, 2019</div>
+                                            Airi Satou Akan Melakakukan Penebusan Barang Gadai Sebesar Rp. 5.162.700
+                                        </div>
                                     </a>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+
+                            <div class="topbar-divider d-none d-sm-block"></div>
+
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow">
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown mt-3">
+                                    <a class="btn btn-primary btn-sm dropdown-toggle" href="#" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-sm text-white-100"></i> Logout
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                            <i class="fas fa-sign-out-alt fa-fw mr-2 text-gray-400"></i>
+                                            Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
 
                 </nav>
                 <!-- End of Topbar -->
