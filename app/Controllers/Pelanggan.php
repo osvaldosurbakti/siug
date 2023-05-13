@@ -23,4 +23,9 @@ class Pelanggan extends BaseController
     {
         return view('pelanggan/perjanjiangadai');
     }
+
+    public function tebusbarang()
+    {
+        return view('pelanggan/tebusbarang');
+    }
 }
