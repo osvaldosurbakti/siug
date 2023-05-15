@@ -195,20 +195,24 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>Honda Astrea</td>
-                                            <td>Rp 3.000.000</td>
-                                            <td></td>
-                                            <td>STNK dan BPKB</td>
-                                            <td><a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="updatebaranglelang" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        </tr>
+                                        <?php foreach ($barangLelang as $bl) : ?>
+                                            <tr>
+                                                <td><?= $bl['nama_barang']; ?></td>
+                                                <td><?= $bl['harga_barang']; ?></td>
+                                                <td>
+                                                    <img src="<?= $bl['gambar_barang']; ?>" alt="Gambar Barang">
+                                                </td>
+                                                <td><?= $bl['kelengkapan_barang']; ?></td>
+                                                <td>
+                                                    <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                    <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

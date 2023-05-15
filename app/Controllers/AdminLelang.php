@@ -7,20 +7,22 @@ use App\Models\BarangLelangModel;
 class Adminlelang extends BaseController
 {
 
+    protected $barangLelangModel;
+
+    public function __construct()
+    {
+        $this->barangLelangModel = new BarangLelangModel();
+    }
+
     public function index()
     {
+        $barangLelang = $this->barangLelangModel->findAll();
 
-        return view('adminlelang/adminlelang');
-    }
+        $data = [
+            'title' => 'Info Barang Lelang',
+            'barangLelang' => $barangLelang
+        ];
 
-    public function tambahbaranglelang()
-    {
-
-        return view('adminlelang/tambahbaranglelang');
-    }
-    public function updatebaranglelang()
-    {
-
-        return view('adminlelang/updatebaranglelang');
+        return view('adminlelang/adminlelang', $data);
     }
 }
