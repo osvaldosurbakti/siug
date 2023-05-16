@@ -35,16 +35,19 @@
                             </div>
                             <form class="user">
                                 <div class="form-group">
-                                    <label for="nama">Nama Barang Lelang</label>
-                                    <input type="text" class="form-control form-control-user" id="namabaranglelang" placeholder="Nama Barang Lelang">
+                                    <label for="namabarang">Nama Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" id="namabaranglelang" placeholder="<?= $baranglelang['nama_barang']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Harga Barang Lelang</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Harga">
+                                    <label for="hargabarang">Harga Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" id="hargabarang" placeholder="<?= $baranglelang['harga_barang']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Kelengkapan Barang Lelang</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Harga">
+                                    <label for="kelengkapanbarang">Kelengkapan Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" id="kelengkapanbarang" placeholder="<?= $baranglelang['kelengkapan_barang']; ?>">
+                                </div>
+                                <div class="col-sm-2">
+                                    <img src="/<?= $baranglelang['gambar_barang']; ?>" class="img-thumbnail img-preview" width="100">
                                 </div>
                                 <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
@@ -52,7 +55,7 @@
                                         <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
                                     </div>
                                 </form>
-                                <a href="adminlelang" class="btn btn-primary btn-user btn-block">
+                                <a href="/adminlelang" class="btn btn-primary btn-user btn-block">
                                     Simpan
                                 </a>
                         </div>
@@ -60,9 +63,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 
 <!-- Bootstrap core JavaScript-->

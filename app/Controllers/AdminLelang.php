@@ -16,13 +16,35 @@ class Adminlelang extends BaseController
 
     public function index()
     {
-        $barangLelang = $this->barangLelangModel->findAll();
+        //$barangLelang = $this->barangLelangModel->findAll();
 
         $data = [
             'title' => 'Info Barang Lelang',
-            'barangLelang' => $barangLelang
+            'barangLelang' => $this->barangLelangModel->getBarangLelang()
         ];
 
         return view('adminlelang/adminlelang', $data);
+    }
+
+    public function detail($id)
+    {
+        $data = [
+            'title' => 'Cek Dulu',
+            'baranglelang' => $this->barangLelangModel->getBarangLelang($id)
+        ];
+        return view('adminlelang/updatebaranglelang', $data);
+    }
+
+    public function updatebaranglelang()
+    {
+        return view('adminlelang/updatebaranglelang');
+    }
+
+    public function create($id)
+    {
+        $data = [
+            'title' => 'Cek Dulu Buat',
+        ];
+        return view('adminlelang/tambahbaranglelang', $data);
     }
 }

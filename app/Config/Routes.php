@@ -36,7 +36,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Home::login');
 $routes->get('/homelelang', 'Home::homeLelang');
 $routes->get('/admin', 'Admin::index');
-$routes->get('/adminlelang', 'Adminlelang::index');
+$routes->get('/adminlelang/(:segment)', 'Adminlelang::detail/$1');
 $routes->get('/login', 'Login::index');
 $routes->get('/tambahbaranglelang', 'Adminlelang::tambahbaranglelang');
 $routes->get('/datatransaksi', 'Pelanggan::datatransaksi');

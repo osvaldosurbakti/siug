@@ -200,14 +200,14 @@
                                                 <td><?= $bl['nama_barang']; ?></td>
                                                 <td><?= $bl['harga_barang']; ?></td>
                                                 <td>
-                                                    <img src="<?= $bl['gambar_barang']; ?>" alt="Gambar Barang">
+                                                    <img src="<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
                                                 </td>
                                                 <td><?= $bl['kelengkapan_barang']; ?></td>
                                                 <td>
                                                     <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                         <i class="fas fa-trash"></i>
                                                     </a>
-                                                    <a href="tambahbaranglelang" class="btn btn-info btn-circle btn-sm">
+                                                    <a href="/adminlelang/<?= $bl['id']; ?>" class="btn btn-info btn-circle btn-sm">
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
                                                 </td>
