@@ -52,7 +52,7 @@
                                 <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="fileUpload">Gambar Barang Lelang</label>
-                                        <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
+                                        <input type="text" lass="form-control form-control-user" id="gambarbarang" placeholder="<?= $baranglelang['gambar_barang']; ?>">
                                     </div>
                                 </form>
                                 <a href="/adminlelang" class="btn btn-primary btn-user btn-block">

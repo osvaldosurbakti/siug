@@ -8,6 +8,7 @@ class BarangLelangModel extends Model
 {
     protected $table = 'barang_lelang';
     protected $useTimestamps = true;
+    protected $allowedFields = ['nama_barang', "harga_barang", "gambar_barang", "kelengkapan_barang", "gambar_barang"];
 
     public function getBarangLelang($id = false)
     {

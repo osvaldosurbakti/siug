@@ -33,28 +33,28 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tambah Barang Lelang</h1>
                             </div>
-                            <form class="user">
-                                <div class="form-group">
-                                    <label for="nama">Nama Barang Lelang</label>
-                                    <input type="text" class="form-control form-control-user" id="namabaranglelang" placeholder="Nama Barang Lelang">
-                                </div>
-                                <div class="form-group">
-                                    <label for="nama">Harga Barang Lelang</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Harga">
-                                </div>
-                                <div class="form-group">
-                                    <label for="nama">Kelengkapan Barang Lelang</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Harga">
-                                </div>
-                                <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <form action="/Adminlelang/save" method="post">
+                                <?= csrf_field(); ?>
+                                <form class="user">
                                     <div class="form-group">
-                                        <label for="fileUpload">Gambar Barang Lelang</label>
-                                        <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
+                                        <label for="nama_barang">Nama Barang Lelang</label>
+                                        <input type="text" class="form-control form-control-user" id="nama_barang" name="nama_barang" placeholder="Nama Barang Lelang" autofocus>
                                     </div>
-                                </form>
-                                <a href="adminlelang" class="btn btn-primary btn-user btn-block">
-                                    Simpan
-                                </a>
+                                    <div class="form-group">
+                                        <label for="harga_barang">Harga Barang Lelang</label>
+                                        <input type="text" class="form-control form-control-user" id="harga_barang" name="harga_barang" placeholder="Harga">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="kelengkapan_barang">Kelengkapan Barang Lelang</label>
+                                        <input type="text" class="form-control form-control-user" id="kelengkapan_barang" name="kelengkapan_barang" placeholder="Kelengkapan Barang Lelang">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gambar_barang">Kelengkapan Barang Lelang</label>
+                                        <input type="text" class="form-control form-control-user" id="gambar_barang" name="gambar_barang" placeholder="Gambar Barang Lelang">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Simpan
+                                        </a>
                         </div>
                     </div>
                 </div>
