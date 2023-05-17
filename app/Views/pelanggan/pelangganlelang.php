@@ -195,13 +195,16 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>Laptop Acer</td>
-                                            <td>Rp 10.500.000</td>
-                                            <td></td>
-                                            <td>Kotak, Charger, Tas Laptop, Mouse, Keyboard</td>
-
-                                        </tr>
+                                        <?php foreach ($barangLelang as $bl) : ?>
+                                            <tr>
+                                                <td><?= $bl['nama_barang']; ?></td>
+                                                <td><?= $bl['harga_barang']; ?></td>
+                                                <td>
+                                                    <img src="/img/<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
+                                                </td>
+                                                <td><?= $bl['kelengkapan_barang']; ?></td>
+                                            </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

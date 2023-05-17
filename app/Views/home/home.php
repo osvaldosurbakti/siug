@@ -115,9 +115,9 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">UD. Ricky Gadai Medan merupakan salah satu perusahaan swasta di Kota Medan yang melayani pegadaian dan pelelangan barang gadai berupa kendaraan pribadi dan barang-barang elektronik. Pada laporan data transaksi, tercatat perusahaan ini beroperasi sejak 2018 dan telah melayani ribuan transaksi dengan nasabah. Perusahaan ini memberikan solusi keuangan bagi individu atau usaha kecil yang membutuhkan dana cepat. </h1>
-                    <img src="GambarGedung.png" alt="Logo">
+                    <img src="img/GambarGedung.png" alt="Logo">
                     <h1></h1>
-                    <img src="Logor.jpg" alt="Logo">
+                    <img src="img/Logor.jpg" alt="Logo">
 
                 </div>
                 <!-- /.container-fluid -->

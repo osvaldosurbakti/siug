@@ -130,13 +130,19 @@
                                         </tr>
                                     </thead>
                                     <tr>
-                                        <td>Honda Astrea</td>
-                                        <td>Rp 3.000.000</td>
-                                        <td></td>
-                                        <td>STNK dan BPKB</td>
+                                        <?php foreach ($barangLelang as $bl) : ?>
+                                    <tr>
+                                        <td><?= $bl['nama_barang']; ?></td>
+                                        <td><?= $bl['harga_barang']; ?></td>
+                                        <td>
+                                            <img src="/img/<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
+                                        </td>
+                                        <td><?= $bl['kelengkapan_barang']; ?></td>
                                     </tr>
-                                    </tr>
-                                    </tbody>
+                                <?php endforeach; ?>
+                                </tr>
+                                </tr>
+                                </tbody>
                                 </table>
                             </div>
                         </div>

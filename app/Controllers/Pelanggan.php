@@ -2,10 +2,21 @@
 
 namespace App\Controllers;
 
+use App\Models\BarangLelangModel;
+
 class Pelanggan extends BaseController
 {
+    protected $barangLelangModel;
+
+    public function __construct()
+    {
+
+        $this->barangLelangModel = new BarangLelangModel();
+    }
+
     public function index()
     {
+
         return view('pelanggan/pelanggan');
     }
 
@@ -16,7 +27,12 @@ class Pelanggan extends BaseController
 
     public function pelangganlelang()
     {
-        return view('pelanggan/pelangganlelang');
+        $data = [
+            'title' => 'Info Barang Lelang',
+            'barangLelang' => $this->barangLelangModel->getBarangLelang()
+        ];
+
+        return view('pelanggan/pelangganlelang', $data);
     }
 
     public function perjanjiangadai()
