@@ -63,7 +63,7 @@ class Adminlelang extends BaseController
             'nama_barang' => 'required'
         ])) {
             $validation = \Config\Services::validation();
-            return redirect()->to('adminlelang/create')->withInput();
+            return redirect()->to('/tambahbaranglelang')->withInput()->with('validation', $validation);
         }
 
         $id = url_title($this->request->getVar('nama_barang'), "-", true);
@@ -74,13 +74,13 @@ class Adminlelang extends BaseController
             'gambar_barang' => $this->request->getVar('gambar_barang')
         ]);
 
-        return redirect()->to("adminlelang");
+        return redirect()->to("/adminlelang");
     }
 
     public function delete($id)
     {
 
         $this->barangLelangModel->delete($id);
-        return redirect()->to('adminlelang');
+        return redirect()->to('/adminlelang');
     }
 }

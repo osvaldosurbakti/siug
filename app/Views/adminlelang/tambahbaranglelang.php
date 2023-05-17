@@ -38,7 +38,7 @@
                                     <?= $validation->getError('nama_barang'); ?>
                                 </div>
                             <?php endif; ?>
-                            <form action="/Adminlelang/save" method="post">
+                            <form action="/adminlelang/save" method="post">
                                 <?= csrf_field(); ?>
                                 <form class="user">
                                     <div class="form-group">
