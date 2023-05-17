@@ -33,11 +33,6 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tambah Barang Lelang</h1>
                             </div>
-                            <?php if ($validation->hasError('nama_barang')) : ?>
-                                <div class="alert alert-danger" role="alert">
-                                    <?= $validation->getError('nama_barang'); ?>
-                                </div>
-                            <?php endif; ?>
                             <form action="/adminlelang/save" method="post">
                                 <?= csrf_field(); ?>
                                 <form class="user">

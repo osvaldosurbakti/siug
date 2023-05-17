@@ -16,7 +16,6 @@ class Adminlelang extends BaseController
 
     public function index()
     {
-        //$barangLelang = $this->barangLelangModel->findAll();
 
         $data = [
             'title' => 'Info Barang Lelang',
@@ -60,7 +59,10 @@ class Adminlelang extends BaseController
     {
 
         if (!$this->validate([
-            'nama_barang' => 'required'
+            'nama_barang' => 'required',
+            'harga_barang' => 'required',
+            'gambar_barang' => 'required',
+            'kelengkapan_barang' => 'required'
         ])) {
             $validation = \Config\Services::validation();
             return redirect()->to('/tambahbaranglelang')->withInput()->with('validation', $validation);
@@ -82,5 +84,16 @@ class Adminlelang extends BaseController
 
         $this->barangLelangModel->delete($id);
         return redirect()->to('/adminlelang');
+    }
+
+    public function edit($id)
+    {
+
+        $data = [
+            'title' => 'Form Ubah',
+            'validation' => \Config\Services::validation(),
+            'baranglelang' => $this->barangLelangModel->getBarangLelang($id)
+        ];
+        return view('adminlelang/updatebaranglelang', $data);
     }
 }

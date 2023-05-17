@@ -211,7 +211,7 @@
                                                             <i class="fas fa-trash"></i>
                                                         </button>
                                                     </form>
-                                                    <a href="/adminlelang/<?= $bl['id']; ?>" class="btn btn-info btn-circle btn-sm">
+                                                    <a href="/updatebaranglelang/<?= $bl['id']; ?>" class="btn btn-info btn-circle btn-sm">
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
                                                 </td>
