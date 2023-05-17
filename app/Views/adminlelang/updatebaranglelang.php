@@ -33,31 +33,31 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Update Barang Lelang</h1>
                             </div>
-                            <form action="/adminlelang/update" method="post"></form>
-                            <div class="form-group">
-                                <label for="namabarang">Nama Barang Lelang</label>
-                                <input type="text" class="form-control form-control-user" id="namabaranglelang" placeholder="<?= $baranglelang['nama_barang']; ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="hargabarang">Harga Barang Lelang</label>
-                                <input type="text" class="form-control form-control-user" id="hargabarang" placeholder="<?= $baranglelang['harga_barang']; ?>">
-                            </div>
-                            <div class="form-group">
-                                <label for="kelengkapanbarang">Kelengkapan Barang Lelang</label>
-                                <input type="text" class="form-control form-control-user" id="kelengkapanbarang" placeholder="<?= $baranglelang['kelengkapan_barang']; ?>">
-                            </div>
-                            <div class="col-sm-2">
-                                <img src="/<?= $baranglelang['gambar_barang']; ?>" class="img-thumbnail img-preview" width="100">
-                            </div>
-                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <form action="/adminlelang/update/<?= $baranglelang['id']; ?>" method="post">
+                                <input type="hidden" name="slug" value="<?= $baranglelang['slug']; ?>">
+                                <div class="form-group">
+                                    <label for="nama_barang">Nama Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" name="nama_barang" id="nama_barang" value="<?= $baranglelang['nama_barang']; ?>" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <label for="harga_barang">Harga Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" name="harga_barang" id="harga_barang" value="<?= $baranglelang['harga_barang']; ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label for="kelengkapan_barang">Kelengkapan Barang Lelang</label>
+                                    <input type="text" class="form-control form-control-user" name="kelengkapan_barang" id="kelengkapan_barang" value="<?= $baranglelang['kelengkapan_barang']; ?>">
+                                </div>
+                                <div class="col-sm-2">
+                                    <img src="/<?= $baranglelang['gambar_barang']; ?>" class="img-thumbnail img-preview" width="100">
+                                </div>
                                 <div class="form-group">
                                     <label for="fileUpload">Gambar Barang Lelang</label>
-                                    <input type="text" lass="form-control form-control-user" id="gambarbarang" placeholder="<?= $baranglelang['gambar_barang']; ?>">
+                                    <input type="text" lass="form-control form-control-user" name="gambar_barang" id="gambar_barang" val="<?= $baranglelang['gambar_barang']; ?>">
                                 </div>
+                                <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    Simpan
+                                </button>
                             </form>
-                            <a href="/adminlelang" class="btn btn-primary btn-user btn-block">
-                                Simpan
-                            </a>
                         </div>
                     </div>
                 </div>
