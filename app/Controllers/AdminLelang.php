@@ -100,7 +100,6 @@ class Adminlelang extends BaseController
     {
         $id = url_title($this->request->getVar('nama_barang'), "-", true);
         $this->barangLelangModel->save([
-            'id' => $id,
             'nama_barang' => $this->request->getVar('nama_barang'),
             'harga_barang' => $this->request->getVar('harga_barang'),
             'kelengkapan_barang' => $this->request->getVar('kelengkapan_barang'),
