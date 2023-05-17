@@ -40,11 +40,6 @@ class Adminlelang extends BaseController
         return view('adminlelang/updatebaranglelang', $data);
     }
 
-    public function updatebaranglelang()
-    {
-        return view('adminlelang/updatebaranglelang');
-    }
-
     public function create()
     {
         session();
@@ -104,6 +99,7 @@ class Adminlelang extends BaseController
         ];
         return view('adminlelang/updatebaranglelang', $data);
     }
+
     public function update($id)
     {
         $id = url_title($this->request->getVar('nama_barang'), "-", true);
