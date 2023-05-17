@@ -48,14 +48,24 @@ class Adminlelang extends BaseController
 
     public function create()
     {
+        session();
         $data = [
             'title' => 'Cek Dulu Buat',
+            'validation' => \Config\Services::validation()
         ];
         return view('adminlelang/tambahbaranglelang', $data);
     }
 
     public function save()
     {
+
+        if (!$this->validate([
+            'nama_barang' => 'required'
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to('adminlelang/create')->withInput();
+        }
+
         $id = url_title($this->request->getVar('nama_barang'), "-", true);
         $this->barangLelangModel->save([
             'nama_barang' => $this->request->getVar('nama_barang'),
@@ -64,6 +74,13 @@ class Adminlelang extends BaseController
             'gambar_barang' => $this->request->getVar('gambar_barang')
         ]);
 
-        return redirect()->to("/adminlelang");
+        return redirect()->to("adminlelang");
+    }
+
+    public function delete($id)
+    {
+
+        $this->barangLelangModel->delete($id);
+        return redirect()->to('adminlelang');
     }
 }
