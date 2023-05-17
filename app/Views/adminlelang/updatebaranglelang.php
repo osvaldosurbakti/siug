@@ -33,7 +33,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Update Barang Lelang</h1>
                             </div>
-                            <form action="/adminlelang/update/<?= $baranglelang['id']; ?>" method="post">
+                            <form action="/adminlelang/update/<?= $baranglelang['id']; ?>" method="post" enctype="multipart/form-data">
                                 <input type="hidden" name="slug" value="<?= $baranglelang['slug']; ?>">
                                 <div class="form-group">
                                     <label for="nama_barang">Nama Barang Lelang</label>
@@ -51,8 +51,8 @@
                                     <img src="/<?= $baranglelang['gambar_barang']; ?>" class="img-thumbnail img-preview" width="100">
                                 </div>
                                 <div class="form-group">
-                                    <label for="fileUpload">Gambar Barang Lelang</label>
-                                    <input type="text" lass="form-control form-control-user" name="gambar_barang" id="gambar_barang" val="<?= $baranglelang['gambar_barang']; ?>">
+                                    <label for="gambar_barang">Gambar Barang Lelang</label>
+                                    <input type="file" class="form-control-file" name="gambar_barang" id="gambar_barang" value="<?= $baranglelang['gambar_barang']; ?>">
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-user btn-block">
                                     Simpan

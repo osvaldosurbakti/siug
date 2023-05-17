@@ -85,6 +85,15 @@ class Adminlelang extends BaseController
     public function delete($id)
     {
 
+        //cari gambar berdasarkan id
+        $baranglelang = $this->barangLelangModel->find($id);
+
+        //cek file gambarnya default.jpg
+        if ($baranglelang['gambar_barang'] != 'default.jpg') {
+            // hapus gambar
+            unlink('img/' . $baranglelang['gambar_barang']);
+        }
+
         $this->barangLelangModel->delete($id);
         return redirect()->to('/adminlelang');
     }
@@ -99,7 +108,6 @@ class Adminlelang extends BaseController
         ];
         return view('adminlelang/updatebaranglelang', $data);
     }
-
     public function update($id)
     {
         $id = url_title($this->request->getVar('nama_barang'), "-", true);
