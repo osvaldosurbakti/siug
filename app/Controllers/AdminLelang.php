@@ -61,19 +61,27 @@ class Adminlelang extends BaseController
         if (!$this->validate([
             'nama_barang' => 'required',
             'harga_barang' => 'required',
-            'gambar_barang' => 'required',
+            'gambar_barang' => 'uploaded[gambar_barang]',
             'kelengkapan_barang' => 'required'
         ])) {
-            $validation = \Config\Services::validation();
-            return redirect()->to('/tambahbaranglelang')->withInput()->with('validation', $validation);
+            // $validation = \Config\Services::validation();
+            // return redirect()->to('/tambahbaranglelang')->withInput()->with('validation', $validation);
+            return redirect()->to('/tambahbaranglelang')->withInput();
         }
+
+        //ambil gambar
+        $fileGambar = $this->request->getFile('gambar_barang');
+        //pindahkan file ke folder
+        $fileGambar->move('img');
+
+        $namaGambar = $fileGambar->getName();
 
         $id = url_title($this->request->getVar('nama_barang'), "-", true);
         $this->barangLelangModel->save([
             'nama_barang' => $this->request->getVar('nama_barang'),
             'harga_barang' => $this->request->getVar('harga_barang'),
             'kelengkapan_barang' => $this->request->getVar('kelengkapan_barang'),
-            'gambar_barang' => $this->request->getVar('gambar_barang')
+            'gambar_barang' => $namaGambar
         ]);
 
         return redirect()->to("/adminlelang");

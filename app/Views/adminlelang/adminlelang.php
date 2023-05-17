@@ -34,7 +34,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img src="logo.jpg" alt="Logo">
+                    <img src="img/logo.jpg" alt="Logo">
                 </div>
                 <div class="sidebar-brand-text mx-3">UD. Ricky Gadai Medan <sup></sup></div>
             </a>
@@ -200,7 +200,7 @@
                                                 <td><?= $bl['nama_barang']; ?></td>
                                                 <td><?= $bl['harga_barang']; ?></td>
                                                 <td>
-                                                    <img src="<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
+                                                    <img src="/img/<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
                                                 </td>
                                                 <td><?= $bl['kelengkapan_barang']; ?></td>
                                                 <td>

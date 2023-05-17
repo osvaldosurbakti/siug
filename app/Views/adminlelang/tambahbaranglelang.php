@@ -33,7 +33,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Tambah Barang Lelang</h1>
                             </div>
-                            <form action="/adminlelang/save" method="post">
+                            <form action="/adminlelang/save" method="post" enctype="multipart/form-data">
                                 <?= csrf_field(); ?>
                                 <form class="user">
                                     <div class="form-group">
@@ -49,8 +49,11 @@
                                         <input type="text" class="form-control form-control-user" id="kelengkapan_barang" name="kelengkapan_barang" placeholder="Kelengkapan Barang Lelang">
                                     </div>
                                     <div class="form-group">
-                                        <label for="gambar_barang">Kelengkapan Barang Lelang</label>
-                                        <input type="text" class="form-control form-control-user" id="gambar_barang" name="gambar_barang" placeholder="Gambar Barang Lelang">
+                                        <label for="gambar_barang">Gambar Barang Lelang</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="gambar_barang" name="gambar_barang">
+                                            <label class="custom-file-label" for="gambar_barang">Pilih gambar...</label>
+                                        </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">
                                         Simpan

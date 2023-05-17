@@ -31,7 +31,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home">
                 <div class="sidebar-brand-icon">
-                    <img src="logo.jpg" alt="Logo">
+                    <img src="img/logo.jpg" alt="Logo">
                 </div>
                 <div class="sidebar-brand-text mx-3">UD. Ricky Gadai Medan <sup></sup></div>
             </a>
