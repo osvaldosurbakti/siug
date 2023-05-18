@@ -175,29 +175,31 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>Osvaldo Surbakti</td>
-                                            <td>Laptop Acer</td>
-                                            <td>087788668719</td>
-                                            <td>2011/04/25</td>
-                                            <td>Rp 5.320.800</td>
-                                            <td>
-                                                <a href="updatedatapelanggan" class="btn btn-info btn-circle btn-sm">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                                <a href="updatedatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
-                                                    <i class="fas fa-info-circle"></i>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                                <a href="#" class="btn btn-secondary ">
-                                                    <span class="icon text-white-100">
-                                                        <i class="fas fa-arrow-right"></i>
-                                                    </span>
-                                                </a>
-                                            </td>
-                                        </tr>
+                                        <?php foreach ($dataPelanggan as $dp) : ?>
+                                            <tr>
+                                                <td><?= $dp['nama']; ?></td>
+                                                <td><?= $dp['nama_barang']; ?></td>
+                                                <td><?= $dp['nomor_handphone']; ?></td>
+                                                <td><?= $dp['tanggal_gadai']; ?></td>
+                                                <td><?= $dp['tanggal_gadai']; ?></td>
+                                                <td>
+                                                    <a href="updatedatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </a>
+                                                    <a href="updatedatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-circle btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-secondary">
+                                                        <span class="icon text-white-100">
+                                                            <i class="fas fa-arrow-right"></i>
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

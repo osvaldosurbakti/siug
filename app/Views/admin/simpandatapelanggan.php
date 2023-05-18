@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Register</title>
+    <title>Simpan Data Pelanggan</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,48 +33,48 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Simpan Data Pelanggan</h1>
                             </div>
-                            <form class="user">
+                            <form action="/simpandatapelanggan/save" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Nama">
+                                    <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama" autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Nomor Induk Kependudukan</label>
-                                    <input type="number" class="form-control form-control-user" id="angka" placeholder="Nomor Induk Kependudukan">
+                                    <label for="nik">Nomor Induk Kependudukan</label>
+                                    <input type="text" class="form-control form-control-user" id="nik" name="nik" placeholder="Nomor Induk Kependudukan">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Alamat</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Alamat">
+                                    <label for="alamat">Alamat</label>
+                                    <input type="text" class="form-control form-control-user" id="alamat" name="alamat" placeholder="Alamat">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Nomor Handphone</label>
-                                    <input type="number" class="form-control form-control-user" id="angka" placeholder="Nomor Handphone">
+                                    <label for="nomor_handphone">Nomor Handphone</label>
+                                    <input type="number" class="form-control form-control-user" id="nomor_handphone" name="nomor_handphone" placeholder="Nomor Handphone">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Tanggal Perjanjian Gadai</label>
-                                    <input type="date" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                                    <label for="tanggal_gadai">Tanggal Perjanjian Gadai</label>
+                                    <input type="date" class="form-control form-control-user" id="tanggal_gadai" name="tanggal_gadai" placeholder="Tanggal Perjanjian Gadai">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Nama Barang Gadai</label>
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Nama Barang Gadai">
+                                    <label for="nama_barang">Nama Barang Gadai</label>
+                                    <input type="text" class="form-control form-control-user" id="nama_barang" name="nama_barang" placeholder="Nama Barang Gadai">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Kelengkapan Barang Gadai</label>
-                                    <input type="name" class="form-control form-control-user" id="exampleInputEmail" placeholder="Kelengkapan Barang Gadai">
+                                    <label for="kelengkapan_barang">Kelengkapan Barang Gadai</label>
+                                    <input type="text" class="form-control form-control-user" id="kelengkapan_barang" name="kelengkapan_barang" placeholder="Kelengkapan Barang Gadai">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Password Akun</label>
-                                    <input type="password" class="form-control form-control-user" id="exampleInputEmail" placeholder="Password">
+                                    <label for="password">Password Akun</label>
+                                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
                                 </div>
-                                <form action="upload.php" method="post" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                        <label for="fileUpload">Upload Foto KTP:</label>
-                                        <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
+                                <div class="form-group">
+                                    <label for="foto_ktp">Upload Foto KTP</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="foto_ktp" name="foto_ktp">
+                                        <label class="custom-file-label" for="foto_ktp">Pilih foto ktp...</label>
                                     </div>
-                                </form>
-                                <a href="simpandatatransaksi" class="btn btn-primary btn-user btn-block">
-                                    Simpan
-                                </a>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-user btn-block" name="simpan">Simpan</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,5 @@
 
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin-2.min.js"></script>
-
-</body>
 
 </html>

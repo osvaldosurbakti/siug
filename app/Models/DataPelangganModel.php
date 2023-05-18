@@ -6,7 +6,14 @@ use CodeIgniter\Model;
 
 class DataPelangganModel extends Model
 {
-    protected $table      = 'siug';
-    protected $primaryKey = 'nomor_handphone';
+    protected $table      = 'data_pelanggan';
     protected $useTimestamps = true;
+
+    public function getDataPelanggan($id = false)
+    {
+        if ($id == false) {
+            return $this->findAll();
+        }
+        return $this->where(['id' => $id])->first();
+    }
 }

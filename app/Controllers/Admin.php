@@ -2,13 +2,26 @@
 
 namespace App\Controllers;
 
-//use App\Models\DataPelangganModel;
+use App\Models\DataPelangganModel;
 
 class Admin extends BaseController
 {
+    protected $dataPelangganModel;
+
+    public function __construct()
+    {
+        $this->dataPelangganModel = new DataPelangganModel();
+    }
+
     public function index()
     {
-        return view('admin/admin');
+
+        $data = [
+            'title' => 'Info Barang Lelang',
+            'dataPelanggan' => $this->dataPelangganModel->getDataPelanggan()
+        ];
+
+        return view('admin/admin', $data);
     }
 
     public function simpandatapelanggan()
