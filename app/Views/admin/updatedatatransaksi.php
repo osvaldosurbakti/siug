@@ -36,27 +36,46 @@
                             </div>
                             <form class="user">
                                 <div class="form-group">
-                                    <label for="nama">Jumlah Pinjaman</label>
-                                    <input type="text" id="rupiah" name="rupiah" placeholder="Rp 0">
+                                    <label for="jumlah_pinjaman">Jumlah Pinjaman</label>
+                                    <input type="text" id="jumlah_pinjaman" name="jumlah_pinjaman" placeholder="Rp 0">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Potong Atas</label>
-                                    <input type="checkbox" id="rupiah" name="rupiah" placeholder="Rp 0">
+                                    <label for="potong_atas">Potong Atas</label>
+                                    <input type="checkbox" id="potong_atas" name="potong_atas">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Jumlah Pinjaman Yang Diterima</label>
-                                    <input type="text" id="rupiah" name="rupiah" placeholder="Rp 0">
+                                    <label for="jumlah_diterima">Jumlah Pinjaman Yang Diterima</label>
+                                    <input type="text" id="jumlah_diterima" name="jumlah_diterima" placeholder="Rp 0" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Jumlah Pinjaman Yang Perlu Dibayarkan</label>
-                                    <input type="text" id="rupiah" name="rupiah" placeholder="Rp 0">
+                                    <label for="jumlah_dibayarkan">Jumlah Pinjaman Yang Perlu Dibayarkan</label>
+                                    <input type="text" id="jumlah_dibayarkan" name="jumlah_dibayarkan" placeholder="Rp 0" readonly>
                                 </div>
-                                <label for="nama">Batas Akhir Pembayaran Pinjaman</label>
-                                <input type="date" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                                <div class="form-group mt-4">
+                                    <label for="batas_pembayaran">Batas Akhir Pembayaran Pinjaman</label>
+                                    <input type="date" class="form-control form-control-user" id="batas_pembayaran" name="batas_pembayaran" placeholder="Tanggal">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="batas_pembayaran">Status Transaksi Saat ini</label>
 
-                                <a href="admin" class="btn btn-primary btn-user btn-block mt-3">
-                                    Simpan
-                                </a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Diperpanjang</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Dilelang</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Terjual</a>
+                                    </div>
+
+                                </div>
+                                <div class="form-group mt-4">
+                                    <a href="admin" class="btn btn-primary btn-user btn-block">
+                                        Simpan
+                                    </a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -77,6 +96,35 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin-2.min.js"></script>
 
-</body>
+<script>
+    // Mendapatkan elemen input
+    var jumlahPinjamanInput = document.getElementById('jumlah_pinjaman');
+    var potongAtasCheckbox = document.getElementById('potong_atas');
+    var jumlahDiterimaInput = document.getElementById('jumlah_diterima');
+    var jumlahDibayarkanInput = document.getElementById('jumlah_dibayarkan');
+
+    // Menambahkan event listener pada input jumlah pinjaman dan potong atas
+    jumlahPinjamanInput.addEventListener('input', updateJumlahDiterima);
+    potongAtasCheckbox.addEventListener('change', updateJumlahDiterima);
+
+    // Fungsi untuk mengupdate jumlah pinjaman yang diterima dan jumlah pinjaman yang perlu dibayarkan
+    function updateJumlahDiterima() {
+        var jumlahPinjaman = parseFloat(jumlahPinjamanInput.value);
+        var potongAtas = potongAtasCheckbox.checked;
+        var persentasePotongAtas = 0.1; // 10% dari jumlah pinjaman
+
+        if (potongAtas) {
+            var jumlahDiterima = jumlahPinjaman - (jumlahPinjaman * persentasePotongAtas);
+            var jumlahDibayarkan = jumlahPinjaman;
+        } else {
+            var jumlahDiterima = jumlahPinjaman;
+            var jumlahDibayarkan = jumlahPinjaman + (jumlahPinjaman * persentasePotongAtas);
+        }
+
+        // Mengupdate nilai input
+        jumlahDiterimaInput.value = jumlahDiterima.toFixed(2);
+        jumlahDibayarkanInput.value = jumlahDibayarkan.toFixed(2);
+    }
+</script>
 
 </html>

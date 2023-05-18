@@ -34,9 +34,19 @@ class Admin extends BaseController
         return view('admin/simpandatatransaksi');
     }
 
-    public function updatedatapelanggan()
+    public function detail($id)
     {
-        return view('admin/updatedatapelanggan');
+        $datapelanggan = $this->dataPelangganModel->getBarangLelang($id);
+
+        if (empty($datapelanggan)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Barang lelang ' . $id . ' tidak ditemukan.');
+        }
+        $data = [
+            'title' => 'Info Barang Lelang',
+            'dataPelanggan' => $datapelanggan
+        ];
+
+        return view('admin/updatedatapelanggan', $data);
     }
 
     public function updatedatatransaksi()

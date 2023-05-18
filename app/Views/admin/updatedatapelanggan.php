@@ -36,7 +36,7 @@
                             <form class="user">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Nama">
+                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Nama" value="<?= $dataPelanggan['nama_barang']; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="nama">Nomor Induk Kependudukan</label>
@@ -72,6 +72,7 @@
                                         <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
                                     </div>
                                 </form>
+
                                 <a href="admin" class="btn btn-primary btn-user btn-block">
                                     Simpan
                                 </a>

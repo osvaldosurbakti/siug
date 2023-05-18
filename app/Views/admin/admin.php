@@ -181,9 +181,9 @@
                                                 <td><?= $dp['nama_barang']; ?></td>
                                                 <td><?= $dp['nomor_handphone']; ?></td>
                                                 <td><?= $dp['tanggal_gadai']; ?></td>
-                                                <td><?= $dp['tanggal_gadai']; ?></td>
+                                                <td>Rp <?= $dp['jumlah_pinjaman']; ?></td>
                                                 <td>
-                                                    <a href="updatedatapelanggan" class="btn btn-info btn-circle btn-sm">
+                                                    <a href="/updatedatapelanggan/ <?= $dp['id']; ?>" class="btn btn-info btn-circle btn-sm">
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
                                                     <a href="updatedatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
