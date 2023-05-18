@@ -27,15 +27,16 @@ class Adminlelang extends BaseController
 
     public function detail($id)
     {
-        $data = [
-            'title' => 'Barang Lelang',
-            'baranglelang' => $this->barangLelangModel->getBarangLelang($id)
-        ];
+        $baranglelang = $this->barangLelangModel->getBarangLelang($id);
 
-        //jika baranglelang tidak ditemukan
-        if (empty($data['baranglelang'])) {
+        if (empty($baranglelang)) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Barang lelang ' . $id . ' tidak ditemukan.');
         }
+
+        $data = [
+            'title' => 'Barang Lelang',
+            'baranglelang' => $baranglelang
+        ];
 
         return view('adminlelang/updatebaranglelang', $data);
     }
@@ -59,8 +60,6 @@ class Adminlelang extends BaseController
             'gambar_barang' => 'uploaded[gambar_barang]',
             'kelengkapan_barang' => 'required'
         ])) {
-            // $validation = \Config\Services::validation();
-            // return redirect()->to('/tambahbaranglelang')->withInput()->with('validation', $validation);
             return redirect()->to('/tambahbaranglelang')->withInput();
         }
 
@@ -110,12 +109,40 @@ class Adminlelang extends BaseController
     }
     public function update($id)
     {
-        $id = url_title($this->request->getVar('nama_barang'), "-", true);
-        $this->barangLelangModel->save([
+        if (!$this->validate([
+            'nama_barang' => 'required',
+            'harga_barang' => 'required',
+            'kelengkapan_barang' => 'required'
+        ])) {
+            return redirect()->back()->withInput()->with('validation', $this->validator);
+        }
+
+        $barangLelang = $this->barangLelangModel->find($id);
+
+        if (empty($barangLelang)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Barang lelang ' . $id . ' tidak ditemukan.');
+        }
+
+        $gambarBarang = $this->request->getFile('gambar_barang');
+        $namaGambar = $barangLelang['gambar_barang'];
+
+        // Cek apakah ada file gambar baru yang diupload
+        if ($gambarBarang->isValid() && !$gambarBarang->hasMoved()) {
+            // Hapus gambar lama jika bukan default.jpg
+            if ($namaGambar != 'default.jpg') {
+                unlink('img/' . $namaGambar);
+            }
+
+            // Pindahkan gambar baru ke folder
+            $gambarBarang->move('img');
+            $namaGambar = $gambarBarang->getName();
+        }
+
+        $this->barangLelangModel->update($id, [
             'nama_barang' => $this->request->getVar('nama_barang'),
             'harga_barang' => $this->request->getVar('harga_barang'),
             'kelengkapan_barang' => $this->request->getVar('kelengkapan_barang'),
-            'gambar_barang' => $this->request->getVar('gambar_barang')
+            'gambar_barang' => $namaGambar
         ]);
 
         return redirect()->to("/adminlelang");
