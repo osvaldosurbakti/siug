@@ -58,7 +58,7 @@ class Admin extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Data pelanggan ' . $id . ' tidak ditemukan.');
         }
         $data = [
-            'title' => 'Info Data Pelanggan',
+            'title' => 'Info Data Transaksi',
             'dataPelanggan' => $datapelanggan
         ];
 

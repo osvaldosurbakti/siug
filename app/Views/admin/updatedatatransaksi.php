@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="potong_atas">Potong Atas</label>
-                                    <input type="checkbox" id="potong_atas" name="potong_atas" value="<?= $dataPelanggan['potong atas']; ?>">
+                                    <input type="checkbox" id="potong_atas" name="potong_atas" value="<?= $dataPelanggan['potong_atas']; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_diterima">Jumlah Pinjaman Yang Diterima</label>
@@ -66,7 +66,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group mt-4">
-                                    <a href="admin" class="btn btn-primary btn-user btn-block">
+                                    <a href="/admin" class="btn btn-primary btn-user btn-block">
                                         Simpan
                                     </a>
                                 </div>

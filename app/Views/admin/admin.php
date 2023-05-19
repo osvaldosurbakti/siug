@@ -186,7 +186,7 @@
                                                     <a href="/admin/updatedatapelanggan/ <?= $dp['id']; ?>" class="btn btn-info btn-circle btn-sm">
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
-                                                    <a href="updatedatatransaksi" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
+                                                    <a href="/admin/updatedatatransaksi/ <?= $dp['id']; ?>" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
                                                     <a href="#" class="btn btn-danger btn-circle btn-sm">
