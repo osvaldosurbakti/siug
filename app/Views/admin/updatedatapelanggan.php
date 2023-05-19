@@ -69,6 +69,9 @@
                                 <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="foto_ktp">Upload Foto KTP:</label>
+                                        <div class="col-sm-2">
+                                            <img src="/img/<?= $dataPelanggan['foto_ktp']; ?>" class="img-thumbnail img-preview" style="max-width: 300px; max-height: 300px;">
+                                        </div>
                                         <input type="file" class="form-control-file" id="foto_ktp" name="foto_ktp" value="<?= $dataPelanggan['foto_ktp']; ?>">
                                     </div>
                                 </form>

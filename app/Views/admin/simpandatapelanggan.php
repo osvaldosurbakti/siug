@@ -92,6 +92,16 @@
                                 <label for="batas_pembayaran">Batas Akhir Pembayaran Pinjaman</label>
                                 <input type="date" class="form-control form-control-user" id="batas_pembayaran" name="batas_pembayaran" placeholder="Tanggal">
                                 <div class="form-group mt-4">
+                                    <label for="status_transaksi">Status Transaksi Saat ini</label>
+                                    <select class="form-control" id="status_transaksi" name="status_transaksi">
+                                        <option value="gadai">Gadai</option>
+                                        <option value="diperpanjang">Diperpanjang</option>
+                                        <option value="diperpanjang2">Diperpanjang 2</option>
+                                        <option value="dilelang">Dilelang</option>
+                                        <option value="terjual">Terjual</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-4">
                                     <a href="admin" class="btn btn-primary btn-user btn-block">
                                         Simpan
                                     </a>
@@ -102,9 +112,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 
 <!-- Bootstrap core JavaScript-->

@@ -50,8 +50,18 @@ class Admin extends BaseController
     }
 
 
-    public function updatedatatransaksi()
+    public function updatedatatransaksi($id)
     {
-        return view('admin/updatedatatransaksi');
+        $datapelanggan = $this->dataPelangganModel->getDataPelanggan($id);
+
+        if (empty($datapelanggan)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data pelanggan ' . $id . ' tidak ditemukan.');
+        }
+        $data = [
+            'title' => 'Info Data Pelanggan',
+            'dataPelanggan' => $datapelanggan
+        ];
+
+        return view('admin/updatedatatransaksi', $data);
     }
 }

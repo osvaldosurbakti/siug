@@ -44,12 +44,12 @@ $routes->get('/pelangganlelang', 'Pelanggan::pelangganlelang');
 $routes->get('/perjanjiangadai', 'Pelanggan::perjanjiangadai');
 $routes->get('/simpandatapelanggan', 'Admin::simpandatapelanggan');
 $routes->get('/simpandatatransaksi', 'Admin::simpandatatransaksi');
-$routes->get('/updatedatatransaksi', 'Admin::updatedatatransaksi');
 $routes->get('/updatebaranglelang', 'Adminlelang::updatebaranglelang');
 $routes->get('/tebusbarang', 'Pelanggan::tebusbarang');
 $routes->delete('/adminlelang/(:num)', 'Adminlelang::delete/$1');
 $routes->get('/updatebaranglelang/(:num)', 'Adminlelang::edit/$1');
 $routes->get('/updatedatapelanggan/(:num)', 'Admin::updatedatapelanggan/$1');
+$routes->get('/updatedatatransaksi/(:num)', 'Admin::updatedatatransaksi/$1');
 
 
 

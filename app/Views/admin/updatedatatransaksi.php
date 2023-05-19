@@ -37,36 +37,33 @@
                             <form class="user">
                                 <div class="form-group">
                                     <label for="jumlah_pinjaman">Jumlah Pinjaman</label>
-                                    <input type="text" id="jumlah_pinjaman" name="jumlah_pinjaman" placeholder="Rp 0">
+                                    <input type="text" id="jumlah_pinjaman" name="jumlah_pinjaman" value="<?= $dataPelanggan['jumlah_pinjaman']; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="potong_atas">Potong Atas</label>
-                                    <input type="checkbox" id="potong_atas" name="potong_atas">
+                                    <input type="checkbox" id="potong_atas" name="potong_atas" value="<?= $dataPelanggan['potong atas']; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_diterima">Jumlah Pinjaman Yang Diterima</label>
-                                    <input type="text" id="jumlah_diterima" name="jumlah_diterima" placeholder="Rp 0" readonly>
+                                    <input type="text" id="jumlah_diterima" name="jumlah_diterima" value="<?= $dataPelanggan['jumlah_diterima']; ?>" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_dibayarkan">Jumlah Pinjaman Yang Perlu Dibayarkan</label>
-                                    <input type="text" id="jumlah_dibayarkan" name="jumlah_dibayarkan" placeholder="Rp 0" readonly>
+                                    <input type="text" id="jumlah_dibayarkan" name="jumlah_dibayarkan" value="<?= $dataPelanggan['jumlah_dibayarkan']; ?>" readonly>
                                 </div>
                                 <div class="form-group mt-4">
                                     <label for="batas_pembayaran">Batas Akhir Pembayaran Pinjaman</label>
-                                    <input type="date" class="form-control form-control-user" id="batas_pembayaran" name="batas_pembayaran" placeholder="Tanggal">
+                                    <input type="date" class="form-control form-control-user" id="batas_pembayaran" name="batas_pembayaran" value="<?= $dataPelanggan['batas_pembayaran']; ?>">
                                 </div>
                                 <div class="form-group mt-4">
                                     <label for="status_transaksi">Status Transaksi Saat ini</label>
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Diperpanjang</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Dilelang</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Terjual</a>
-                                    </div>
+                                    <select class="form-control" id="status_transaksi" name="status_transaksi" value="<?= $dataPelanggan['status_transaksi']; ?>">
+                                        <option value="gadai">Gadai</option>
+                                        <option value="diperpanjang">Diperpanjang</option>
+                                        <option value="diperpanjang2">Diperpanjang 2</option>
+                                        <option value="dilelang">Dilelang</option>
+                                        <option value="terjual">Terjual</option>
+                                    </select>
                                 </div>
                                 <div class="form-group mt-4">
                                     <a href="admin" class="btn btn-primary btn-user btn-block">
