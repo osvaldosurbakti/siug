@@ -56,8 +56,7 @@
                                     <input type="date" class="form-control form-control-user" id="batas_pembayaran" name="batas_pembayaran" placeholder="Tanggal">
                                 </div>
                                 <div class="form-group mt-4">
-                                    <label for="batas_pembayaran">Status Transaksi Saat ini</label>
-
+                                    <label for="status_transaksi">Status Transaksi Saat ini</label>
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Dropdown
                                     </a>
@@ -68,7 +67,6 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Terjual</a>
                                     </div>
-
                                 </div>
                                 <div class="form-group mt-4">
                                     <a href="admin" class="btn btn-primary btn-user btn-block">

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Register</title>
+    <title>Update Data Pelanggan</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,44 +36,43 @@
                             <form class="user">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Nama" value="<?= $dataPelanggan['nama_barang']; ?>">
+                                    <input type="text" class="form-control form-control-user" id="nama" value="<?= $dataPelanggan['nama']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Nomor Induk Kependudukan</label>
-                                    <input type="number" class="form-control form-control-user" id="angka" placeholder="Nomor Induk Kependudukan">
+                                    <label for="nik">Nomor Induk Kependudukan</label>
+                                    <input type="number" class="form-control form-control-user" id="nik" name="nik" value="<?= $dataPelanggan['nik']; ?>">
+                                </div>
+                                <div class=" form-group">
+                                    <label for="alamat">Alamat</label>
+                                    <input type="text" class="form-control form-control-user" id="alamat" name="alamat" value="<?= $dataPelanggan['alamat']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Alamat</label>
-                                    <input type="text" class="form-control form-control-user" id="nama" placeholder="Alamat">
+                                    <label for="nomor_handphone">Nomor Handphone</label>
+                                    <input type="number" class="form-control form-control-user" id="nomor_handphone" name="nomor_handphone" value="<?= $dataPelanggan['nomor_handphone']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Nomor Handphone</label>
-                                    <input type="number" class="form-control form-control-user" id="angka" placeholder="Nomor Handphone">
+                                    <label for="tanggal_gadai">Tanggal Perjanjian Gadai</label>
+                                    <input type="date" class="form-control form-control-user" id="tanggal_gadai" name="nama_barang" value="<?= $dataPelanggan['tanggal_gadai']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Tanggal Perjanjian Gadai</label>
-                                    <input type="date" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                                    <label for="nama_barang">Nama Barang Gadai</label>
+                                    <input type="email" class="form-control form-control-user" id="nama_barang" name="nama_barang" value="<?= $dataPelanggan['nama_barang']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Nama Barang Gadai</label>
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Nama Barang Gadai">
+                                    <label for="kelengkapan_barang">Kelengkapan Barang Gadai</label>
+                                    <input type="name" class="form-control form-control-user" id="kelengkapan_barang" name="kelengkapan_barang" value="<?= $dataPelanggan['kelengkapan_barang']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="nama">Kelengkapan Barang Gadai</label>
-                                    <input type="name" class="form-control form-control-user" id="exampleInputEmail" placeholder="Kelengkapan Barang Gadai">
-                                </div>
-                                <div class="form-group">
-                                    <label for="nama">Password Akun</label>
-                                    <input type="password" class="form-control form-control-user" id="exampleInputEmail" placeholder="Password">
+                                    <label for="password">Password Akun</label>
+                                    <input type="password" class="form-control form-control-user" id="password" name="password" value="<?= $dataPelanggan['password']; ?>">
                                 </div>
                                 <form action="upload.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
-                                        <label for="fileUpload">Upload Foto KTP:</label>
-                                        <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
+                                        <label for="foto_ktp">Upload Foto KTP:</label>
+                                        <input type="file" class="form-control-file" id="foto_ktp" name="foto_ktp" value="<?= $dataPelanggan['foto_ktp']; ?>">
                                     </div>
                                 </form>
-
-                                <a href="admin" class="btn btn-primary btn-user btn-block">
+                                <a href="/admin" class="btn btn-primary btn-user btn-block">
                                     Simpan
                                 </a>
                         </div>

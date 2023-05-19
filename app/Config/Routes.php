@@ -49,7 +49,8 @@ $routes->get('/updatebaranglelang', 'Adminlelang::updatebaranglelang');
 $routes->get('/tebusbarang', 'Pelanggan::tebusbarang');
 $routes->delete('/adminlelang/(:num)', 'Adminlelang::delete/$1');
 $routes->get('/updatebaranglelang/(:num)', 'Adminlelang::edit/$1');
-$routes->get('/updatedatapelanggan/(:num)', 'Admin::detail/$1');
+$routes->get('/updatedatapelanggan/(:num)', 'Admin::updatedatapelanggan/$1');
+
 
 
 
