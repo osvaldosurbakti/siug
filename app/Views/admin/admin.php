@@ -190,8 +190,14 @@
                                                     <a href="/admin/updatedatatransaksi/ <?= $dp['id']; ?>" class="btn btn-info btn-circle btn-sm" style="background-color: green;">
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                        <i class="fas fa-trash"></i>
+                                                    <a>
+                                                        <form action="/admin/delete/<?= $dp['id']; ?>" method="post" class="d-inline">
+                                                            <?= csrf_field(); ?>
+                                                            <input type="hidden" name="_method" value="DELETE">
+                                                            <button type="submit" class="btn btn-danger btn-circle btn-sm" onclick="return confirm('Apakah anda yakin dihapus?')">
+                                                                <i class="fas fa-trash"></i>
+                                                            </button>
+                                                        </form>
                                                     </a>
                                                     <a href="#" class="btn btn-secondary">
                                                         <span class="icon text-white-100">

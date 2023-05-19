@@ -46,6 +46,7 @@ $routes->get('/simpandatapelanggan', 'Admin::create');
 $routes->get('/updatebaranglelang', 'Adminlelang::updatebaranglelang');
 $routes->get('/tebusbarang', 'Pelanggan::tebusbarang');
 $routes->delete('/adminlelang/(:num)', 'Adminlelang::delete/$1');
+$routes->delete('/admin/(:num)', 'Admin::delete/$1');
 $routes->get('/updatebaranglelang/(:num)', 'Adminlelang::edit/$1');
 $routes->get('/updatedatapelanggan/(:num)', 'Admin::updatedatapelanggan/$1');
 $routes->get('/updatedatatransaksi/(:num)', 'Admin::updatedatatransaksi/$1');

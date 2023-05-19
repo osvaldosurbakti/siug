@@ -119,4 +119,20 @@ class Admin extends BaseController
 
         return view('admin/updatedatatransaksi', $data);
     }
+
+    public function delete($id)
+    {
+
+        //cari gambar berdasarkan id
+        $datapelanggan = $this->dataPelangganModel->find($id);
+
+        //cek file gambarnya default.jpg
+        if ($datapelanggan['foto_ktp'] != 'default.jpg') {
+            // hapus gambar
+            unlink('img/' . $datapelanggan['foto_ktp']);
+        }
+
+        $this->dataPelangganModel->delete($id);
+        return redirect()->to('/admin');
+    }
 }
