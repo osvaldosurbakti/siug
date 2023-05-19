@@ -55,6 +55,7 @@ class Admin extends BaseController
             'batas_pembayaran' => 'required',
             'status_transaksi' => 'required'
         ])) {
+
             return redirect()->to('/simpandatapelanggan')->withInput();
         }
 

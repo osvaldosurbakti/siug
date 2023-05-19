@@ -129,20 +129,26 @@
                                             <th>Kelengkapan Barang Lelang</th>
                                         </tr>
                                     </thead>
-                                    <tr>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Nama Barang Lelang</th>
+                                            <th>Harga</th>
+                                            <th>Gambar Barang Lelang</th>
+                                            <th>Kelengkapan Barang Lelang</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
                                         <?php foreach ($barangLelang as $bl) : ?>
-                                    <tr>
-                                        <td><?= $bl['nama_barang']; ?></td>
-                                        <td><?= $bl['harga_barang']; ?></td>
-                                        <td>
-                                            <img src="/img/<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
-                                        </td>
-                                        <td><?= $bl['kelengkapan_barang']; ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
-                                </tr>
-                                </tr>
-                                </tbody>
+                                            <tr>
+                                                <td><?= $bl['nama_barang']; ?></td>
+                                                <td><?= $bl['harga_barang']; ?></td>
+                                                <td>
+                                                    <img src="/img/<?= $bl['gambar_barang']; ?>" alt="Gambar Barang" width="100">
+                                                </td>
+                                                <td><?= $bl['kelengkapan_barang']; ?></td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
