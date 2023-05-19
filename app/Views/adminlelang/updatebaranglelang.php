@@ -48,7 +48,7 @@
                                     <input type="text" class="form-control form-control-user" name="kelengkapan_barang" id="kelengkapan_barang" value="<?= $baranglelang['kelengkapan_barang']; ?>">
                                 </div>
                                 <div class="col-sm-2">
-                                    <img src="/<?= $baranglelang['gambar_barang']; ?>" class="img-thumbnail img-preview" width="100">
+                                    <img src="/img/<?= $baranglelang['gambar_barang']; ?>" class="img-thumbnail img-preview" width="100">
                                 </div>
                                 <div class="form-group">
                                     <label for="gambar_barang">Gambar Barang Lelang</label>
