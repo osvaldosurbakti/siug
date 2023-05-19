@@ -143,7 +143,8 @@
                     <h1 class="h3 mb-2 text-gray-800">Data Perjanjian Gadai</h1>
 
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <a href="simpandatapelanggan" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Tambah Perjanjian Gadai</a>
+                        <a href="simpandatapelanggan" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <i class="fas fa-download fa-sm text-white-50"></i> Tambah Perjanjian Gadai</a>
                     </div>
 
                     <!-- DataTales Example -->

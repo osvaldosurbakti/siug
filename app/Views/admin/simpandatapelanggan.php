@@ -33,7 +33,8 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Simpan Data Pelanggan</h1>
                             </div>
-                            <form action="/simpandatapelanggan/save" method="post" enctype="multipart/form-data">
+                            <form action="/admin/save" method="post" enctype="multipart/form-data">
+                                <?= csrf_field(); ?>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
                                     <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama" autofocus>
@@ -48,7 +49,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="nomor_handphone">Nomor Handphone</label>
-                                    <input type="number" class="form-control form-control-user" id="nomor_handphone" name="nomor_handphone" placeholder="Nomor Handphone">
+                                    <input type="text" class="form-control form-control-user" id="nomor_handphone" name="nomor_handphone" placeholder="Nomor Handphone">
                                 </div>
                                 <div class="form-group">
                                     <label for="tanggal_gadai">Tanggal Perjanjian Gadai</label>
@@ -101,11 +102,9 @@
                                         <option value="terjual">Terjual</option>
                                     </select>
                                 </div>
-                                <div class="form-group mt-4">
-                                    <a href="admin" class="btn btn-primary btn-user btn-block">
-                                        Simpan
-                                    </a>
-                                </div>
+                                <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    Simpan
+                                </button>
                             </form>
                         </div>
                     </div>
