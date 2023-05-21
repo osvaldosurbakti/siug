@@ -33,7 +33,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Simpan Data Pelanggan</h1>
                             </div>
-                            <form action="/admin/save" method="post" enctype="multipart/form-data">
+                            <form action="/admin/save" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
                                 <?= csrf_field(); ?>
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
@@ -76,19 +76,19 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_pinjaman">Jumlah Pinjaman</label>
-                                    <input type="text" id="jumlah_pinjaman" name="jumlah_pinjaman" placeholder="Rp 0">
+                                    <input type="text" class="form-control form-control-user" id="jumlah_pinjaman" name="jumlah_pinjaman" placeholder="Rp 0">
                                 </div>
                                 <div class="form-group">
                                     <label for="potong_atas">Potong Atas</label>
-                                    <input type="checkbox" id="potong_atas" name="potong_atas">
+                                    <input type="checkbox" class="form-control" id="potong_atas" name="potong_atas">
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_diterima">Jumlah Pinjaman Yang Diterima</label>
-                                    <input type="text" id="jumlah_diterima" name="jumlah_diterima" placeholder="Rp 0" readonly>
+                                    <input type="text" class="form-control form-control-user" id="jumlah_diterima" name="jumlah_diterima" placeholder="Rp 0" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_dibayarkan">Jumlah Pinjaman Yang Perlu Dibayarkan</label>
-                                    <input type="text" id="jumlah_dibayarkan" name="jumlah_dibayarkan" placeholder="Rp 0" readonly>
+                                    <input type="text" class="form-control form-control-user" id="jumlah_dibayarkan" name="jumlah_dibayarkan" placeholder="Rp 0" readonly>
                                 </div>
                                 <label for="batas_pembayaran">Batas Akhir Pembayaran Pinjaman</label>
                                 <input type="date" class="form-control form-control-user" id="batas_pembayaran" name="batas_pembayaran" placeholder="Tanggal">

@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Register</title>
+    <title>Update Data Transaksi</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -34,14 +34,14 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Update Data Transaksi</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" method="POST" action="/admin/updatedatatransaksi">
                                 <div class="form-group">
                                     <label for="jumlah_pinjaman">Jumlah Pinjaman</label>
-                                    <input type="text" id="jumlah_pinjaman" name="jumlah_pinjaman" value="<?= $dataPelanggan['jumlah_pinjaman']; ?>">
+                                    <input type="text" id="jumlah_pinjaman" name="jumlah_pinjaman" value="<?= $dataPelanggan['jumlah_pinjaman']; ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="potong_atas">Potong Atas</label>
-                                    <input type="checkbox" id="potong_atas" name="potong_atas" value="<?= $dataPelanggan['potong_atas']; ?>">
+                                    <input type="checkbox" id="potong_atas" name="potong_atas" <?= $dataPelanggan['potong_atas'] !== null && $dataPelanggan['potong_atas'] == 0 ? 'checked' : '' ?>>
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlah_diterima">Jumlah Pinjaman Yang Diterima</label>
@@ -57,18 +57,16 @@
                                 </div>
                                 <div class="form-group mt-4">
                                     <label for="status_transaksi">Status Transaksi Saat ini</label>
-                                    <select class="form-control" id="status_transaksi" name="status_transaksi" value="<?= $dataPelanggan['status_transaksi']; ?>">
-                                        <option value="gadai">Gadai</option>
-                                        <option value="diperpanjang">Diperpanjang</option>
-                                        <option value="diperpanjang2">Diperpanjang 2</option>
-                                        <option value="dilelang">Dilelang</option>
-                                        <option value="terjual">Terjual</option>
+                                    <select class="form-control" id="status_transaksi" name="status_transaksi">
+                                        <option value="gadai" <?= $dataPelanggan['status_transaksi'] == 'gadai' ? 'selected' : ''; ?>>Gadai</option>
+                                        <option value="diperpanjang" <?= $dataPelanggan['status_transaksi'] == 'diperpanjang' ? 'selected' : ''; ?>>Diperpanjang</option>
+                                        <option value="diperpanjang2" <?= $dataPelanggan['status_transaksi'] == 'diperpanjang2' ? 'selected' : ''; ?>>Diperpanjang 2</option>
+                                        <option value="dilelang" <?= $dataPelanggan['status_transaksi'] == 'dilelang' ? 'selected' : ''; ?>>Dilelang</option>
+                                        <option value="terjual" <?= $dataPelanggan['status_transaksi'] == 'terjual' ? 'selected' : ''; ?>>Terjual</option>
                                     </select>
                                 </div>
                                 <div class="form-group mt-4">
-                                    <a href="/admin" class="btn btn-primary btn-user btn-block">
-                                        Simpan
-                                    </a>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">Simpan</button>
                                 </div>
                             </form>
                         </div>
@@ -92,34 +90,36 @@
 <script src="js/sb-admin-2.min.js"></script>
 
 <script>
-    // Mendapatkan elemen input
-    var jumlahPinjamanInput = document.getElementById('jumlah_pinjaman');
-    var potongAtasCheckbox = document.getElementById('potong_atas');
-    var jumlahDiterimaInput = document.getElementById('jumlah_diterima');
-    var jumlahDibayarkanInput = document.getElementById('jumlah_dibayarkan');
+    $(document).ready(function() {
+        // Mendapatkan elemen input
+        var jumlahPinjamanInput = $('#jumlah_pinjaman');
+        var potongAtasCheckbox = $('#potong_atas');
+        var jumlahDiterimaInput = $('#jumlah_diterima');
+        var jumlahDibayarkanInput = $('#jumlah_dibayarkan');
 
-    // Menambahkan event listener pada input jumlah pinjaman dan potong atas
-    jumlahPinjamanInput.addEventListener('input', updateJumlahDiterima);
-    potongAtasCheckbox.addEventListener('change', updateJumlahDiterima);
+        // Menambahkan event listener pada input jumlah pinjaman dan potong atas
+        jumlahPinjamanInput.on('input', updateJumlahDiterima);
+        potongAtasCheckbox.on('change', updateJumlahDiterima);
 
-    // Fungsi untuk mengupdate jumlah pinjaman yang diterima dan jumlah pinjaman yang perlu dibayarkan
-    function updateJumlahDiterima() {
-        var jumlahPinjaman = parseFloat(jumlahPinjamanInput.value);
-        var potongAtas = potongAtasCheckbox.checked;
-        var persentasePotongAtas = 0.1; // 10% dari jumlah pinjaman
+        // Fungsi untuk mengupdate jumlah pinjaman yang diterima dan jumlah pinjaman yang perlu dibayarkan
+        function updateJumlahDiterima() {
+            var jumlahPinjaman = parseFloat(jumlahPinjamanInput.val());
+            var potongAtas = potongAtasCheckbox.is(':checked');
+            var persentasePotongAtas = 0.1; // 10% dari jumlah pinjaman
 
-        if (potongAtas) {
-            var jumlahDiterima = jumlahPinjaman - (jumlahPinjaman * persentasePotongAtas);
-            var jumlahDibayarkan = jumlahPinjaman;
-        } else {
-            var jumlahDiterima = jumlahPinjaman;
-            var jumlahDibayarkan = jumlahPinjaman + (jumlahPinjaman * persentasePotongAtas);
+            if (potongAtas) {
+                var jumlahDiterima = jumlahPinjaman - (jumlahPinjaman * persentasePotongAtas);
+                var jumlahDibayarkan = jumlahPinjaman;
+            } else {
+                var jumlahDiterima = jumlahPinjaman;
+                var jumlahDibayarkan = jumlahPinjaman + (jumlahPinjaman * persentasePotongAtas);
+            }
+
+            // Mengupdate nilai input
+            jumlahDiterimaInput.val(jumlahDiterima.toFixed(2));
+            jumlahDibayarkanInput.val(jumlahDibayarkan.toFixed(2));
         }
-
-        // Mengupdate nilai input
-        jumlahDiterimaInput.value = jumlahDiterima.toFixed(2);
-        jumlahDibayarkanInput.value = jumlahDibayarkan.toFixed(2);
-    }
+    });
 </script>
 
 </html>
