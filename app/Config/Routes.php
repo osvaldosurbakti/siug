@@ -2,7 +2,6 @@
 
 namespace Config;
 
-use App\Controllers\HomeLelang;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
