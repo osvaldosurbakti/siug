@@ -28,9 +28,4 @@ class Home extends BaseController
         ];
         return view('home/homelelang', $data);
     }
-
-    public function login()
-    {
-        return view('home/login');
-    }
 }

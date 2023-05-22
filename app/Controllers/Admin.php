@@ -58,7 +58,7 @@ class Admin extends BaseController
         $validationRules['potong_atas'] = 'permit_empty';
 
         if (!$this->validate($validationRules)) {
-            return redirect()->to('/simpandatapelanggan')->withInput();
+            return redirect()->to('/admin')->withInput();
         }
 
         // Ambil gambar

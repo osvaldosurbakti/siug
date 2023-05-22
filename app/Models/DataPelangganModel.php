@@ -7,9 +7,25 @@ use CodeIgniter\Model;
 class DataPelangganModel extends Model
 {
     protected $table      = 'data_pelanggan';
+    protected $primaryKey = 'id';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'nik', 'alamat', 'nomor_handphone', 'tanggal_gadai', 'nama_barang', 'kelengkapan_barang', 'password', 'foto_ktp', 'jumlah_pinjaman', 'potong_atas', 'jumlah_diterima', 'jumlah_dibayarkan', 'batas_pembayaran', 'status_transaksi'];
-
+    protected $allowedFields = [
+        'nama',
+        'nik',
+        'alamat',
+        'nomor_handphone',
+        'tanggal_gadai',
+        'nama_barang',
+        'kelengkapan_barang',
+        'password',
+        'foto_ktp',
+        'jumlah_pinjaman',
+        'potong_atas',
+        'jumlah_diterima',
+        'jumlah_dibayarkan',
+        'batas_pembayaran',
+        'status_transaksi'
+    ];
 
     public function getDataPelanggan($id = false)
     {
@@ -21,5 +37,10 @@ class DataPelangganModel extends Model
     public function getAllDataPelanggan()
     {
         return $this->findAll();
+    }
+
+    public function getPelangganByNomorHandphone($nomorHandphone)
+    {
+        return $this->where('nomor_handphone', $nomorHandphone)->first();
     }
 }

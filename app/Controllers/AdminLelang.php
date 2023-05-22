@@ -107,6 +107,8 @@ class Adminlelang extends BaseController
         ];
         return view('adminlelang/updatebaranglelang', $data);
     }
+
+
     public function update($id)
     {
         if (!$this->validate([

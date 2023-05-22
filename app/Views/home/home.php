@@ -51,7 +51,7 @@
 
             <!-- Nav Item - Login -->
             <li class="nav-item active">
-                <a class="nav-link" href="login">
+                <a class="nav-link" href="home/login">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Login Pengguna Jasa Gadai</span></a>
             </li>

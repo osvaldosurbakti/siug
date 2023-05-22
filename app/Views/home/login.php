@@ -39,18 +39,15 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Login Pengguna Jasa Gadai</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" action="<?= base_url('login/processLogin') ?>" method="post">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Nomor Handphone">
+                                            <input type="tel" class="form-control form-control-user" name="nomor_handphone" aria-describedby="emailHelp" placeholder="Nomor Handphone" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            <input type="password" class="form-control form-control-user" name="password" placeholder="Password" required>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
                                     </form>
-                                    <hr>
                                     <div class="text-center">
                                         <a class="small" href=https://wa.me/087788668719>Kesulitan Login? Hubungi Kami</a>
                                     </div>
