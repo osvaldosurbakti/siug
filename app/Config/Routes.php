@@ -31,10 +31,23 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+$routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "noauth"]);
+
+// Admin routes
+$routes->group("admin", ["filter" => "auth"], function ($routes) {
+    $routes->get("/", "AdminController::index");
+});
+// Pelanggan routes
+$routes->group("editor", ["filter" => "auth"], function ($routes) {
+    $routes->get("/", "PelangganController::index");
+});
+$routes->get('logout', 'UserController::logout');
+
 $routes->get('/', 'Home::index');
-$routes->get('/login', 'Login::index');
+//$routes->get('/login', 'Login::index');
 $routes->get('/homelelang', 'Home::homeLelang');
-$routes->get('/admin', 'Admin::index');
+$routes->get('/admins', 'Admin::index');
 $routes->get('/tambahbaranglelang', 'Adminlelang::create');
 $routes->get('/adminlelang/tambahbaranglelang/(:segment)', 'Adminlelang::edit/$1');
 $routes->get('/datatransaksi', 'Pelanggan::datatransaksi');
