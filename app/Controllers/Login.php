@@ -15,7 +15,7 @@ class Login extends BaseController
 
     public function index()
     {
-        return view('home/login');
+        return view('login');
     }
 
     public function processLogin()

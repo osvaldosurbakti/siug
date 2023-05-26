@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php echo $_ENV['PROJECT_NAME'];?></title>
+    <title><?php echo $_ENV['PROJECT_NAME'];?> </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?= base_url('css/sb-admin-2.min.css') ?>" rel="stylesheet">
 
 </head>
 
@@ -36,12 +36,20 @@
                             <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-image: url('<?php echo base_url('img/LogoR.jpg'); ?>')"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
+                                    <?php if (isset($validation)) : ?>
+                                        <div class="col-12">
+                                            <div class="alert alert-danger" role="alert">
+                                                <?= $validation->listErrors() ?>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+      
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Login Pengguna Jasa Gadai</h1>
                                     </div>
-                                    <form class="user" action="<?= base_url('login/processLogin') ?>" method="post">
+                                    <form class="user" action="<?= base_url('login') ?>" method="post">
                                         <div class="form-group">
-                                            <input type="tel" class="form-control form-control-user" name="nomor_handphone" aria-describedby="emailHelp" placeholder="Nomor Handphone" required>
+                                            <input type="email" class="form-control form-control-user" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" required>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user" name="password" placeholder="Password" required>
