@@ -36,7 +36,7 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['url'];
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
@@ -55,6 +55,8 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+
+        date_default_timezone_set('Asia/Jakarta');
 
     }
 }

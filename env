@@ -14,13 +14,13 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
 
-app.baseURL = 'http://localhost:8080/'
+app.baseURL = 'http://siug.test/'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -31,11 +31,11 @@ app.baseURL = 'http://localhost:8080/'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
-database.default.database = siug
+database.default.database = project_siug
 database.default.username = root
 database.default.password = 
 database.default.DBDriver = MySQLi
-database.default.DBPrefix =
+database.default.DBPrefix = password
 database.default.port = 3306
 
 # database.tests.hostname = localhost
