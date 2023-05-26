@@ -42,11 +42,11 @@ class UserController extends BaseController
                 // Redirecting to dashboard after login
                 if($user['role'] == "admin"){
 
-                    return redirect()->to(base_url('admin'));
+                    return redirect()->route('adminHome');
 
                 }elseif($user['role'] == "pelanggan"){
 
-                    return redirect()->to(base_url('pelanggan'));
+                    return redirect()->route('userHome');
                 }
             }
         }

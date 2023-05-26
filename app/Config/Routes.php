@@ -35,12 +35,18 @@ $routes->setAutoRoute(true);
 $routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "noauth"]);
 
 // Admin routes
-$routes->group("admin", ["filter" => "auth"], function ($routes) {
-    $routes->get("/", "AdminController::index");
+$routes->group("dashboard", ["filter" => "auth"], function ($routes) {
+    $routes->get("/", "AdminController::index", ['as' =>'adminHome']);
+    $routes->get("admin/list", "AdminController::adminList", ['as' => 'adminList']);
+    $routes->get("admin/add", "AdminController::adminAdd", ['as' => 'adminAdd']);
+    $routes->post("admin/store", "AdminController::adminStore", ['as' => 'adminStore']);
+    $routes->get("admin/edit/(:num)", "AdminController::adminEdit/$1", ['as' => 'adminEdit']);
+    $routes->post("admin/update/(:num)", "AdminController::adminUpdate/$1", ['as' => 'adminUpdate']);
+    $routes->delete("admin/delete/(:num)", "AdminController::adminDelete/$1", ['as' => 'adminDelete']);
 });
 // Pelanggan routes
-$routes->group("editor", ["filter" => "auth"], function ($routes) {
-    $routes->get("/", "PelangganController::index");
+$routes->group("pelanggan", ["filter" => "auth"], function ($routes) {
+    $routes->get("/", "PelangganController::index", ['as' => 'userHome']);
 });
 $routes->get('logout', 'UserController::logout');
 
@@ -51,7 +57,7 @@ $routes->get('/admins', 'Admin::index');
 $routes->get('/tambahbaranglelang', 'Adminlelang::create');
 $routes->get('/adminlelang/tambahbaranglelang/(:segment)', 'Adminlelang::edit/$1');
 $routes->get('/datatransaksi', 'Pelanggan::datatransaksi');
-$routes->get('/pelanggan', 'Pelanggan::index');
+$routes->get('/pelanggans', 'Pelanggan::index');
 $routes->get('/pelangganlelang', 'Pelanggan::pelangganlelang');
 $routes->get('/perjanjiangadai', 'Pelanggan::perjanjiangadai');
 $routes->get('/simpandatapelanggan', 'Admin::create');
