@@ -47,7 +47,7 @@
                     </div>
                     <div class="mb-3">
                         <div class="card-body text-left">
-                            <img class="img-account-profile mb-2" src="<?= base_url('img/') ?><?=$user['foto_ktp']?>" alt="" height="300">
+                            <img class="img-account-profile mb-2" src="<?= base_url('img/pelanggan/') ?><?=$user['foto_ktp']?>" alt="" height="300">
                         </div>
                     </div>
                     <div class="mb-3">

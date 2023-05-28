@@ -101,7 +101,7 @@ class PelangganController extends BaseController
             'alamat' => $this->request->getVar('alamat'),
             'foto_ktp' => $fileName
         ]);
-        $dataBerkas->move('img/', $fileName);
+        $dataBerkas->move('img/pelanggan/', $fileName);
 
         session()->setFlashdata('message', 'Tambah Data Berhasil');
         return redirect()->route('pelangganList');
@@ -180,7 +180,7 @@ class PelangganController extends BaseController
         
         if($dataktp->isValid()){
             $fileName = $this->generateRandomString().'.jpg';
-            $dataktp->move('img/', $fileName);
+            $dataktp->move('img/pelanggan/', $fileName);
         }else{
             $fileName = $dataPelanggan['foto_ktp'];
         }
