@@ -16,7 +16,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
@@ -43,10 +43,17 @@ $routes->group("dashboard", ["filter" => "auth"], function ($routes) {
     $routes->get("admin/edit/(:num)", "AdminController::adminEdit/$1", ['as' => 'adminEdit']);
     $routes->post("admin/update/(:num)", "AdminController::adminUpdate/$1", ['as' => 'adminUpdate']);
     $routes->delete("admin/delete/(:num)", "AdminController::adminDelete/$1", ['as' => 'adminDelete']);
+
+    $routes->get("pelanggan/list", "PelangganController::list", ['as' => 'pelangganList']);
+    $routes->get("pelanggan/add", "PelangganController::add", ['as' => 'pelangganAdd']);
+    $routes->post("pelanggan/store", "PelangganController::store", ['as' => 'pelangganStore']);
+    $routes->get("pelanggan/edit/(:num)", "PelangganController::edit/$1", ['as' => 'pelangganEdit']);
+    $routes->post("pelanggan/update/(:num)", "PelangganController::update/$1", ['as' => 'pelangganUpdate']);
+    $routes->delete("pelanggan/delete/(:num)", "PelangganController::delete/$1", ['as' => 'pelangganDelete']);
 });
 // Pelanggan routes
 $routes->group("pelanggan", ["filter" => "auth"], function ($routes) {
-    $routes->get("/", "PelangganController::index", ['as' => 'userHome']);
+    $routes->get("/", "Pelanggan\HomeController::index", ['as' => 'userHome']);
 });
 $routes->get('logout', 'UserController::logout');
 

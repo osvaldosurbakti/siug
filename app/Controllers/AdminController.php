@@ -123,7 +123,6 @@ class AdminController extends BaseController
  
         $this->user->update($id, [
             'name' => $this->request->getVar('nama'),
-            'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'phone_no' => $this->request->getVar('no_telp'),
             'email' => $this->request->getVar('email'),
             'password' => $this->request->getVar('password')
