@@ -18,7 +18,8 @@ class User extends Model
         "email",
         "phone_no",
         "password",
-        "role"
+        "role",
+        "updated_by"
     ];
 
     // Dates
@@ -37,14 +38,37 @@ class User extends Model
     // Callbacks
     protected $allowCallbacks = true;
     protected $beforeInsert   = ["beforeInsert"];
-    protected $afterInsert    = [];
-    protected $beforeUpdate   = ["beforeUpdate"];
-    protected $afterUpdate    = [];
+    protected $afterInsert    = ['insertUserstamp'];
+    protected $beforeUpdate   = ["beforeUpdate",'updateUserstamp'];
+    protected $afterUpdate    = ['afterUpdate'];
     protected $beforeFind     = [];
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+    protected function insertUserstamp(array $data) {
+        $user_id = session()->get('id');
+        //if (!empty($user_id) &&  !array_key_exists('created_by', $data) && !array_key_exists('updated_by', $data)) {
+        if (!empty($user_id) &&   !array_key_exists('updated_by', $data)) {
+            //$data['data']['created_by'] = $user_id;
+            $data['data']['updated_by'] = $user_id;
+        }
+        return $data;
+    }
+
+    /**
+     * This method saves the session "user_id" value to "updated_by" array element before 
+     * the row is inserted into the database.
+     *
+     */
+    protected function updateUserstamp(array $data) {
+        $user_id = session()->get('id');
+        if (!empty($user_id) && !array_key_exists('updated_by', $data)) {
+            $data['data']['updated_by'] = $user_id;
+        }
+        return $data;
+    }
+    
     protected function beforeInsert(array $data)
     {
         $data = $this->passwordHash($data);
@@ -54,6 +78,12 @@ class User extends Model
     protected function beforeUpdate(array $data)
     {
         $data = $this->passwordHash($data);
+        return $data;
+    }
+
+    protected function afterUpdate(array $data)
+    {
+        $data = session()->get('name');
         return $data;
     }
 

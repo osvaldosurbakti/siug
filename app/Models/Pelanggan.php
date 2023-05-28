@@ -21,7 +21,7 @@ class Pelanggan extends Model
     ];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
@@ -35,14 +35,38 @@ class Pelanggan extends Model
 
     // Callbacks
     protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
+    protected $beforeInsert   = ['insertUserstamp'];
     protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
+    protected $beforeUpdate   = ['updateUserstamp'];
     protected $afterUpdate    = [];
     protected $beforeFind     = [];
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+    protected function insertUserstamp(array $data) {
+        $user_id = session()->get('id');
+        //if (!empty($user_id) &&  !array_key_exists('created_by', $data) && !array_key_exists('updated_by', $data)) {
+        if (!empty($user_id) &&   !array_key_exists('updated_by', $data)) {
+            //$data['data']['created_by'] = $user_id;
+            $data['data']['updated_by'] = $user_id;
+        }
+        return $data;
+    }
+
+    /**
+     * This method saves the session "user_id" value to "updated_by" array element before 
+     * the row is inserted into the database.
+     *
+     */
+    protected function updateUserstamp(array $data) {
+        $user_id = session()->get('id');
+        if (!empty($user_id) && !array_key_exists('updated_by', $data)) {
+            $data['data']['updated_by'] = $user_id;
+        }
+        return $data;
+    } 
 
     public function AllData()
     {
@@ -50,6 +74,7 @@ class Pelanggan extends Model
             ->select('pelanggan.id, pelanggan.user_id, pelanggan.nik, pelanggan.alamat, pelanggan.foto_ktp, users.name, users.email, users.phone_no, users.role')
             ->join('users', 'users.id=pelanggan.user_id', 'left')
             ->where('pelanggan.deleted_at', null)
+            ->orderBy('pelanggan.id DESC')
             ->get()
             ->getResultArray();
     }
