@@ -47,7 +47,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="small mb-1" for="foto_ktp">Foto KTP</label>
-                        <input type="file" class="form-control" id="foto_ktp" name="foto_ktp">
+                        <input type="file" class="form-control" id="foto_ktp" name="foto_ktp" accept="image/*">
                     </div>
                     <div class="mb-3">
                         <label class="small mb-1" for="email">Email</label>
